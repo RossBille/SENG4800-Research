@@ -1,0 +1,212 @@
+%
+% Honours Report Template
+% updated May 2013
+%
+\documentclass[a4,12pt]{article}
+%
+\usepackage{epsfig}
+\usepackage{latexsym}
+\usepackage{graphicx}
+\usepackage{./natbib/natbib}
+% It also sets the bibliographystyle to plainnat; for more information on
+% natbib citation styles, see the natbib documentation, a copy of which
+% is archived at http://www.jmlr.org/format/natbib.pdf
+\usepackage{setspace}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsfonts}
+\usepackage{color}
+
+%\graphicspath{{./figures/}
+%Formatting-------------------------------------------------------------------
+%\renewcommand{\refname}{\textbf{Literature}}
+%
+\renewcommand{\contentsname}{\small\textbf{{\center Table of Contents}}}
+%
+\setlength{\textheight}{8.8in}
+%
+\setlength{\topmargin}{-1.5cm}
+%
+\doublespacing
+%\setlength{\textwidth}{17cm}
+%
+%\setlength{\oddsidemargin}{-0.1714in}
+%
+% Boxit -----------------------------------------------------------
+\setlength{\fboxrule}{0.2mm} \setlength{\fboxsep}{4mm}
+%
+\newsavebox{\savepar}
+\newenvironment{boxit}{\begin{lrbox}{\savepar}
+        \begin{minipage}[b]{4.6in}}
+        {\end{minipage}\end{lrbox}\fbox{\usebox{\savepar}}}
+        
+        
+        
+        
+ \hyphenation{op-tical net-works Mathe-ma-tical street-scape street-scapes aes-the-tics aes-the-tic com-pu-ting geo-metric Geo-me-tric geo-metry boun-da-ries de-ve-lop-ment know-ledge mani-fold mani-folds high-di-men-sio-nal}
+%
+%
+%
+% Document-----------------------------------------------------------------------
+%
+\begin{document}
+%
+\title{\bf The title should be expressive;  Have less than 20 words; For reports and theses it  can be more specific than for books; No special symbols or abbreviations. }
+%
+\author{Name\\
+School of Electrical Engineering \& Computer Science\\
+The University of Newcastle\\ Callaghan NSW 2308, Australia\\
+Email: \texttt{name@uon.edu.au} } 
+
+\maketitle
+
+
+\newpage
+\begin{abstract}%
+\noindent The abstract summarises the content of the paper or report and should have 70-200 words (depending on the publisher or other requirements); It
+should state briefly what the paper is about (maybe also what
+methods were used), what its (new) results are, why it is
+important or significant. It can also be useful to state (or
+indicate implicitly) who is the addressed readership and whether
+its a review article, a short paper, a pilot study, an
+extension of previous work or a thesis. Try to avoid special symbols, abbreviations, and citations.
+\end{abstract}
+
+\pagebreak
+
+\tableofcontents
+
+\pagebreak
+
+\section{Introduction}
+
+There are different ways to write an introduction. Typically it
+contains background information and a review of literature which
+indicates how the study fits into the context of other previous
+work. This way the introduction can  address the significance and importance of the study. Major related publications in big journals should be cited
+as well as closely related other articles. The literature review typically uses newer papers when it tries to address the state-of-the-art of a technique or recent developments. However, when first mentioning a method name the historically first source that introduced that concept should be cited. There are different citation styles and here is an example~\citep{QuinlanChalupMiddletonACRA2003}. The introduction
+typically motivates the general hypotheses, aims and research questions
+of a paper, report or thesis.  
+
+\begin{center}
+\begin{boxit}
+\textbf{The research question is important.}
+\end{boxit}
+\end{center}
+
+Questions raised in the introduction can later be answered in the final discussion.
+
+The introduction often ends with a brief overview of the structure or organisation of
+the paper, report or thesis.
+
+%
+\section{Sections}
+%
+There can be several sections and subsections that establish the main part: E.g. Background, Methods, Data, Environment or Task, Experiments, Results or similar as appropriate. The individual section titles can be more specific and expressive depending on the topic of your paper. 
+
+%
+\section{About Honours Theses}
+%
+The Honours degree and the associated honours thesis are specified in the new UoN ``Bachelor Honours Policy'' which can be found at the following link
+\begin{center}
+%\begin{verbatim}
+{http://www.newcastle.edu.au/policy/000990.html}
+%\end{verbatim}
+\end{center}
+You have to comply with this policy. It is very general you may find it helpful to adopt some of the details in subsections \ref{sec:thesis} and \ref{sec:assessment} but only as long as they comply with the Honours policy.
+
+\subsection{CSSE Honours Thesis Specifications}\label{sec:thesis}
+For several years CSSE required the following specifications for an Honours report:
+\begin{itemize}
+\item Cover page, containing title, student name, submission date and supervisor name.\item Minimum of 50 pages, using 12 point font and double spacing (but at least 10,000 words).\item Minimum of 25 references.
+\end{itemize}
+\subsection{Assessment} \label{sec:assessment}
+Assessment of an Honours report would typically look points such as:
+\begin{itemize}\item Clear understanding of the topic of the work.\item Literature review (analysis, citations, organization, comprehensiveness).\item Clear problem definition and description.\item Methods applied to solve the problem (complexity, suitability).\item Comparison of alternative approaches, identification of the problems.\item Results/analysis/conclusion.\item Report presentation
+\end{itemize}
+
+%
+\section{\LaTeX}
+%
+\LaTeX is a text processing systems that is commonly used by mathematicians and engineers. It is free and you can find a lot of information on the internet, e.g. at : 
+\begin{center}
+http://www.latex-project.org
+\end{center}
+
+%
+\section{Methods}
+%
+The description and discussion of the methods can include some theory. Formulas can be in-line like that $a \cdot b = d$ or on a separate line with an equation number that you can refer to
+\begin{equation}
+a \cdot b = d
+\end{equation}
+%
+\section{Experiments}
+%
+Describe and discuss the experimental set-up employed in our study. We also include a test figure here (see Figure~\ref{fig:nn1}). 
+\begin{figure}[htbp]
+\begin{center}
+    \leavevmode
+    \includegraphics[width=45mm]{figure.pdf}
+\caption{This is to show how to include graphics. Always put a reference in the caption where the graph comes from (this one is from the COMP3330 lectures).}
+\label{fig:nn1}
+\end{center}
+\end{figure}
+%
+\subsection{Results}
+%
+Include statistical evaluation; tables; graphs.
+\subsection{Just an example table}
+We include a table to show how it can be done (see Table~\ref{table:ListOfVelocities}).
+%
+\begin{table}[h!]
+\begin{center}
+\leavevmode
+%\begin{boxit}
+\small %\sf
+\begin{tabular}{|cll|l|}\hline
+%
+%Speed               & &  & \\
+%
+Speed (${mm}/{sec}$) & Methods & Robot & Team, References, Description\\[0.1cm]\hline
+%
+170& learned & & Sony, \citep{HornbyEtAl1999}??\\%\hline
+%
+230& hand-tuned & {\sc ers}-210(a) & German Team  \\%\hline
+%
+245& hand-tuned & {\sc ers}-210(a) &Austin  \\%\hline
+%
+???& hand-tuned & {\sc ers}-210(a) &NUbots  \\%\hline
+%
+254& hand-tuned & {\sc ers}-210(a) &UNSW, P-walk of \citep{HengstEtAl2001}\\%\hline
+%
+270& learned & {\sc ers}-210(a) &UNSW/NICTA, \citep{KimUther2003}\\%\hline
+%
+295& learned & {\sc ers}-210(a) &NUbots,
+\citep{QuinlanChalupMiddletonACRA2003}\\%\hline
+%
+291& learned & {\sc ers}-210(a) &Austin, \citep{KohlStone2004}\\\hline
+%
+\end{tabular}
+\end{center}
+\caption{History of speed improvements for the Sony {\sc aibo}
+robot.} \label{table:ListOfVelocities}
+\end{table}
+%
+\section{Discussion}
+%
+Give an extended and detailed discussion of your study. Explain what we can learn from your study.
+%
+\section{Conclusion}
+%
+A brief final summary of the main achievements and outcomes. Possibly some suggestions for future work that can follow on from your project.%
+%
+\subsection*{Acknowledgements}
+The author is grateful to ....
+%
+\vskip 0.2in
+%\newpage
+\bibliographystyle{apalike}
+\bibliography{./literature.bib}
+
+\end{document}
