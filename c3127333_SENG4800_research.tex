@@ -51,12 +51,12 @@
 %
 \begin{document}
 %
-\title{\bf The title should be expressive;  Have less than 20 words; For reports and theses it  can be more specific than for books; No special symbols or abbreviations. }
+\title{\bf Technology and User Interaction }
 %
-\author{Name\\
+\author{Ross Bille\\
 School of Electrical Engineering \& Computer Science\\
 The University of Newcastle\\ Callaghan NSW 2308, Australia\\
-Email: \texttt{name@uon.edu.au} } 
+Email: \texttt{c3127333@uon.edu.au} } 
 
 \maketitle
 
@@ -100,20 +100,37 @@ The introduction often ends with a brief overview of the structure or organisati
 the paper, report or thesis.
 
 %
+\section{Background}
+Why we need user engagement
+\subsection{The Skinner Box}
+The Skinner Box is a technique named by B.F. Skinner describing a small cage which houses a small animal, a lever and a way of delivering rewards to the animal (Slater, 2005). The idea was to train the animal to continuously hit the lever. The animal gets rewarded at random intervals for lever pressing, with the possibility of punishment if the lever is not pressed (usually by electric shock). This technique has been around since the 1930’s and has been implemented in video games since their inception.
+\\
+Game designers have expanded the Skinner Box concept and made it feel like second nature to players. They have done this by offering virtual rewards to players who achieve pre- defined goals (this is obvious in any games that have levels and/or virtual currency) and recently by punishing players for not playing regularly (usually by devaluing the players hard earned virtual currency or by making in-game possessions deteriorate).
+\\
+The Skinner Box concept is a great way to develop players’ obsession to a game while offering no real world reward, often leaving the player wondering why they wasted so much time on the game \citep{QuinlanChalupMiddletonACRA2003}
+(“5 Creepy Ways Video Games Are Trying to Get You Addicted,” n.d.).
+\subsection{Gamification}
+What is gamification?
+\subsection{Virtual Reality}
+\section{Elements in Game Design}
+
+\subsection{Stories}
+
+\subsection{Rewards}
+\subsection{Usability}
+\subsection{Competition}
+\subsection{Environment}
+\section{Existing Projects}
+\subsection{Unit9}
+\subsection{City Evolutions}
+\subsection{Vivid}
+\section{Proposal for the City Evolutions project}
 \section{Sections}
 %
 There can be several sections and subsections that establish the main part: E.g. Background, Methods, Data, Environment or Task, Experiments, Results or similar as appropriate. The individual section titles can be more specific and expressive depending on the topic of your paper. 
 
 %
-\section{About Honours Theses}
-%
-The Honours degree and the associated honours thesis are specified in the new UoN ``Bachelor Honours Policy'' which can be found at the following link
-\begin{center}
-%\begin{verbatim}
-{http://www.newcastle.edu.au/policy/000990.html}
-%\end{verbatim}
-\end{center}
-You have to comply with this policy. It is very general you may find it helpful to adopt some of the details in subsections \ref{sec:thesis} and \ref{sec:assessment} but only as long as they comply with the Honours policy.
+\section{Literature Review}
 
 \subsection{CSSE Honours Thesis Specifications}\label{sec:thesis}
 For several years CSSE required the following specifications for an Honours report:
@@ -124,17 +141,18 @@ For several years CSSE required the following specifications for an Honours repo
 Assessment of an Honours report would typically look points such as:
 \begin{itemize}\item Clear understanding of the topic of the work.\item Literature review (analysis, citations, organization, comprehensiveness).\item Clear problem definition and description.\item Methods applied to solve the problem (complexity, suitability).\item Comparison of alternative approaches, identification of the problems.\item Results/analysis/conclusion.\item Report presentation
 \end{itemize}
-
-%
-\section{\LaTeX}
-%
-\LaTeX is a text processing systems that is commonly used by mathematicians and engineers. It is free and you can find a lot of information on the internet, e.g. at : 
-\begin{center}
-http://www.latex-project.org
-\end{center}
-
 %
 \section{Methods}
+\subsection{Research}
+\subsection{Observation}
+Being a part of the City Evolutions team i have had access to a number of statistical data around the current level of interaction between the users and the various City Evolutions projects. Some of this data includes:
+\begin{itemize}
+    \item{Number of QR codes scanned comment{add reference to table}}
+    \item{Number of NFC chips scanned comment{again reference the table}}
+    \item{Number of interactions with various applications comment{and again}}
+\end{itemize}
+
+
 %
 The description and discussion of the methods can include some theory. Formulas can be in-line like that $a \cdot b = d$ or on a separate line with an equation number that you can refer to
 \begin{equation}
@@ -154,8 +172,46 @@ Describe and discuss the experimental set-up employed in our study. We also incl
 \end{figure}
 %
 \subsection{Results}
-%
-Include statistical evaluation; tables; graphs.
+\begin{table}[h!]
+    \begin{center}
+        \leavevmode
+        \begin{tabular}{|cll|l|}\hline
+            QR Code & Total number of scans & Number of scans per day\\[0.1cm]\hline
+            qr1 & 100 & 1\\\hline
+        \end{tabular}
+    \end{center}
+    \caption{QR Codes}
+    \label{table:qrcodes}
+\end{table}
+
+\begin{table}[h!]
+    \begin{center}
+    \leavevmode 
+    \small
+    \begin{tabular}{|cll|l|}\hline
+        %
+        QR Code & Total number of scans & Number of scans per day\\[0.1cm]\hline
+        %
+        NFC1 & 100 & 1\\\hline
+    \end{tabular}
+    \end{center}
+    \caption{NFC Chips}
+    \label{table:nfcchips}
+\end{table}
+
+\begin{table}[h!]
+    \begin{center}
+    \leavevmode
+    \begin{tabular}{|cll|l|}\hline
+        Project & Total Interactions & Interactions per day\\[0.1cm]\hline
+        \\\hline
+    \end{tabular}
+    \end{center}
+    \caption{City Evolutions Projects}
+    \label{table:cityEvolutionsProjects}
+\end{table}
+
+add a graph in of interations over days
 \subsection{Just an example table}
 We include a table to show how it can be done (see Table~\ref{table:ListOfVelocities}).
 %
@@ -165,8 +221,8 @@ We include a table to show how it can be done (see Table~\ref{table:ListOfVeloci
 %\begin{boxit}
 \small %\sf
 \begin{tabular}{|cll|l|}\hline
-%
-%Speed               & &  & \\
+%3
+%Speed               & &  & \\3
 %
 Speed (${mm}/{sec}$) & Methods & Robot & Team, References, Description\\[0.1cm]\hline
 %
