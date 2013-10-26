@@ -3,6 +3,14 @@
 % updated May 2013
 %
 \documentclass[a4,12pt]{article}
+\makeatletter
+\renewcommand\paragraph{\@startsection{paragraph}{4}{\z@}%
+            {-2.5ex\@plus -1ex \@minus -.25ex}%
+                        {1.25ex \@plus .25ex}%
+                                    {\normalfont\normalsize\bfseries}}
+                                    \makeatother
+                                    \setcounter{secnumdepth}{4} % how many sectioning levels to assign numbers to
+                                    \setcounter{tocdepth}{4}    % how many sectioning levels to show in ToC
 %
 \usepackage{epsfig}
 \usepackage{latexsym}
@@ -51,13 +59,12 @@
 %
 \begin{document}
 %
-\title{\bf Technology and User Interaction }
+\title{\bf Technology \& User Engagement}
 %
 \author{Ross Bille\\
 School of Electrical Engineering \& Computer Science\\
 The University of Newcastle\\ Callaghan NSW 2308, Australia\\
 Email: \texttt{c3127333@uon.edu.au} } 
-
 \maketitle
 
 
@@ -88,9 +95,12 @@ as well as closely related other articles. The literature review typically uses 
 typically motivates the general hypotheses, aims and research questions
 of a paper, report or thesis.  
 
+%Confidence in technology
+%    how to get the genreal community interested in using current technology in order to drive research
+
 \begin{center}
 \begin{boxit}
-\textbf{The research question is important.}
+\textbf{How do we get users more involved in the systems we create?}
 \end{boxit}
 \end{center}
 
@@ -111,14 +121,15 @@ The Skinner Box concept is a great way to develop players’ obsession to a game
 (“5 Creepy Ways Video Games Are Trying to Get You Addicted,” n.d.).
 \subsection{Gamification}
 Gamification is the process of integrating game dynamics and techniques into non-game processes. This is usually done to increase interaction, productivity or satisfaction.
+\subsubsection{The history of Gamification}
 
 \subsection{Virtual Reality}
 \section{Elements in Game Design}
 
 \subsection{Stories}
-
 \subsection{Rewards}
 \subsection{Usability}
+\subsubsection{Effort Reduction}
 \subsection{Competition}
 \subsection{Environment}
 %
@@ -146,28 +157,67 @@ Unit9 benefits greatly from the technique of gamification.
 The sites running on Watt Street offer differing levels of interactivity; from no interactivity (the user only views) to low levels of interactivity, i.e. the user can move an object left and right by moving in front of a camera or the user can press buttons on their android smart phone to select movies to be projected.
 \subsection{Vivid}
 \section{Proposal for the City Evolutions project}
-\subsection{Closing the Loop}
-\subsection{Social Media}
-\section{Literature Review}
+\subsection{Hardware}
+\subsubsection{Mobile}
+\paragraph{NFC}
+\paragraph{QR Codes}
+\paragraph{Networking}
+\subsection{Software}
+\subsubsection{Gamification}
+%outline the techniques in gamification and how they relate to the city evolutions (how ot be implemented)
 
-\subsection{CSSE Honours Thesis Specifications}\label{sec:thesis}
-For several years CSSE required the following specifications for an Honours report:
+\subsubsection{Closing the Loop}
+\subsubsection{Social Media}
+%http://www.go-gulf.com/blog/smartphone/
+The City Evolutions team are already taking advantage of technologies such as NFC chips and QR codes. A suggestion would be to utilise them even more extensively. Some examples include:
 \begin{itemize}
-\item Cover page, containing title, student name, submission date and supervisor name.
-\item Minimum of 50 pages, using 12 point font and double spacing (but at least 10,000 words).
-\item Minimum of 25 references.
+    \item{Develop a Login system and use NFC as a log in option}
+    \item{Create leader boards where appropriate to encourage users to use the above mentioned Login system}
+    \item{Make use of a digital checkin system so users can scan their smartphone
+            \begin{itemize}
+                \item{Rewards System (i.e. frequent visitor card)}
+                \item{Popularity/rating register (i.e. to inform tourists of some of the popular destinations of visit in Newcastle)}
+            \end{itemize}
+        }
 \end{itemize}
-\subsection{Assessment} \label{sec:assessment}
-Assessment of an Honours report would typically look points such as:
-\begin{itemize}
-\item Clear understanding of the topic of the work.
-\item Literature review (analysis, citations, organization, comprehensiveness).
-\item Clear problem definition and description.
-\item Methods applied to solve the problem (complexity, suitability).
-\item Comparison of alternative approaches, identification of the problems.
-\item Results/analysis/conclusion.
-\item Report presentation
-\end{itemize}
+\section{Literature Review}
+% compare + contrast different authors views 
+% group authors who draw simmilar conclusions
+% criticise aspects of methodology
+% Note areas of authors disagreement
+% Highlight exemplary studies
+% Highlight gaps in previous research or questions left unanswered
+% condlue by summarising what the literature says
+
+\subsection{Work Place}
+\subsection{Education}
+\subsection{Community}
+
+\subsection{Patterns}
+% id patterns or trends in literature
+\subsection{Relation}
+% show how your study relates to previous studies
+% show how your study relates to the literature in general
+\subsection{Conclusions}
+% http://www.canberra.edu.au/studyskills/writing/literature
+%\subsection{CSSE Honours Thesis Specifications}\label{sec:thesis}
+%For several years CSSE required the following specifications for an Honours report:
+%\begin{itemize}
+%\item Cover page, containing title, student name, submission date and supervisor name.
+%\item Minimum of 50 pages, using 12 point font and double spacing (but at least 10,000 words).
+%\item Minimum of 25 references.
+%\end{itemize}
+%\subsection{Assessment} \label{sec:assessment}
+%Assessment of an Honours report would typically look points such as:
+%\begin{itemize}
+%\item Clear understanding of the topic of the work.
+%\item Literature review (analysis, citations, organization, comprehensiveness).
+%\item Clear problem definition and description.
+%\item Methods applied to solve the problem (complexity, suitability).
+%\item Comparison of alternative approaches, identification of the problems.
+%\item Results/analysis/conclusion.
+%\item Report presentation
+%\end{itemize}
 %
 \section{Methods}
 \subsection{Research}
@@ -271,6 +321,8 @@ robot.} \label{table:ListOfVelocities}
 %
 Give an extended and detailed discussion of your study. Explain what we can learn from your study.
 %
+\section{Glossary}
+
 \section{Conclusion}
 %
 A brief final summary of the main achievements and outcomes. Possibly some suggestions for future work that can follow on from your project.%
