@@ -12,13 +12,15 @@
 %\setcounter{secnumdepth}{4} % how many sectioning levels to assign numbers to
 %\setcounter{tocdepth}{4}    % how many sectioning levels to show in ToC
 %
+\usepackage[section]{placeins}
 \usepackage{pbox}
 \usepackage{epsfig}
 \usepackage{latexsym}
 \usepackage{graphicx}
 \usepackage[square,numbers]{./natbib/natbib}
 \usepackage{url}
-\usepackage{graphicx}
+\usepackage{caption}
+\usepackage{subcaption}
 % It also sets the bibliographystyle to plainnat; for more information on
 % natbib citation styles, see the natbib documentation, a copy of which
 % is archived at http://www.jmlr.org/format/natbib.pdf
@@ -139,12 +141,25 @@ Walk into almost any primary school classroom and you will see a poster with a l
 \subsubsection{Online Learning}
 With the advancements in technology over the past few years universities around the world have started offering courses by distance in an online manner; in addition to this, there are many websites dedicated to teaching content to anyone that wants to learn it.
 
-\paragraph{\indent~Distance Education\\}
+\paragraph{\indent~University Distance Education.}
+Generally with higher education there is less emphasis on the initial interest of the student and more on keeping the student motivated once they have enrolled in a course, this is due to the content itself interesting the students. Unfortunately keeping students motivated after their initial interest wears off is the difficult part, this becomes more apparent when it comes to distance education~\citep{distance-education}.
+Generally the students that enroll in courses online are of mature age and sometimes they have other focuses in life~\citep{distance-education}.
 
+\par
+Universities around the world have been taking steps to increase this motivation, largely through the use of multimedia, lectures can now be pre-recorded and streamed to students all around the world. Universities around the world, have adopted this technique, however this is still not enough and this paper will describe some more techniques that would be of great benefits to this type of education (see section~\ref{sec:techniques-to-enhance}).
 
-\paragraph{\indent~Codecademy\\} 
+\paragraph{\indent~Educational Websites.} 
+Coursera is an online collaboration of universities such as (but not limited to): 
+\begin{itemize}
+	\item{Stanford University,}
+	\item{Yale University,}
+	\item{The University of Tokyo, and}
+	\item{HEC Paris}
+\end{itemize}
+Coursera aims to create a collaborative environment for users to learn and teach each other. The universities that contribute to Coursera use the above mentioned technique of streaming lectures to students and users; however there are a few more techniques that are implemented in order to assist in motivating students, one of these techniques is the use of social media to share achievements which will be explained in more depth in sections~\ref{sec:gamification} and~\ref{sec:social-media}.
 
-
+\par
+Another educational website, Codecademy specialises
 
 \subsection{Therapy}
 Used to help patients open up and express themselves
@@ -154,7 +169,7 @@ Starbucks coffee rewards etc
 \subsection{Community}
 Increase tourism and community awareness (general well-being)
 
-\section{Techniques to Enhance User Engagement}
+\section{Techniques to Enhance User Engagement}\label{sec:techniques-to-enhance}
 
 \subsection{Rewards}\label{sec:rewards}
 
@@ -180,13 +195,20 @@ Gamification takes advantage of various features that are present in game design
 \subsection{Virtual Reality}
 \subsection{Effort Reduction}
 \subsection{Usability}
-\subsection{Social Media}
+\subsection{Social Media}\label{sec:social-media}
 \subsection{Education}
 %closing the loop etc
-%
+%o
+\newpage
 \section{City Evolutions}
 \subsection{Analysis}
-\section{Results}
+Analyse the current setup of the city evolutions project.\\
+discuss the current statistics:
+\begin{itemize}
+	\item{Good points (project clearly had a boost on open)}
+	\item{Bad points (users aren't motivated to keep coming back and scanning the qr code because there isnt a lot of new material)}
+\end{itemize}
+
 \begin{figure}[ht!]
 	\centering
 	\includegraphics[width=150mm]{./images/OverallQRCodeDownload}
@@ -210,7 +232,7 @@ Gamification takes advantage of various features that are present in game design
 
 \begin{figure}[ht!]
 	\centering
-	\includegraphics[width=75mm]{./images/qrcode-threlkeld}
+	\includegraphics[width=50mm]{./images/qrcode-threlkeld}
 	\caption{QR Code - Threlkeld Speak}
 	\label{QR-threkeld-barcode}
 \end{figure}
@@ -255,7 +277,50 @@ Gamification takes advantage of various features that are present in game design
 	\label{table:interactivity-description}
 \end{table}
 
+\newpage
+\subsection{Proposal}
 
+\begin{figure}
+\centering
+\begin{minipage}{.5\textwidth}
+  \centering
+  \includegraphics[width=.4\linewidth]{./images/iphone-interface}
+  \captionof{figure}{Application start screen}
+  \label{iphone-interface-startscreen}
+\end{minipage}%
+\begin{minipage}{.5\textwidth}
+  \centering
+  \includegraphics[width=.4\linewidth]{./images/iphone-interface-menu}
+  \captionof{figure}{Application Menu}
+  \label{iphone-interface-menu}
+\end{minipage}
+\end{figure}
+
+
+\begin{figure}
+\centering
+\begin{minipage}{.5\textwidth}
+  \centering
+  \includegraphics[width=.4\linewidth]{./images/iphone-interface-leaderboard}
+  \captionof{figure}{Application leader board}
+  \label{iphone-interface-leaderboard}
+\end{minipage}%
+\begin{minipage}{.5\textwidth}
+  \centering
+  \includegraphics[width=.4\linewidth]{./images/iphone-interface-map}
+  \captionof{figure}{Application locations map}
+  \label{iphone-interface-map}
+\end{minipage}
+\end{figure}
+
+\begin{figure}[ht!]
+	\centering
+	\includegraphics[width=100mm]{./images/MultiPlayerChurchGame}
+	\caption{Multiplayer pong-style game to be played at the church.}
+	\label{application-multiPlyerPong}
+\end{figure}
+
+\newpage
 \section{Discussion}
 %
 Give an extended and detailed discussion of your study. Explain what we can learn from your study.
