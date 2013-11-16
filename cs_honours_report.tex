@@ -85,20 +85,64 @@ Email: \texttt{c3127333@uon.edu.au} }
 \pagebreak
 
 \section{Introduction}
-
 %User engagement and why we need it
+Systems are created daily to achieve a set of goals, these goals vary greatly depending on the environment that the system has to run in, be it in the workplace, schools, community, or general commercial systems. Regardless of the environment, the types of systems that will be discussed in this paper all share one thing, that is to achieve their goals they all require users to interact with the system in one way or another. 
+This interaction needs to be present throughout the entire life cycle of the system, however this paper will mainly discuss two phases of this life cycle, the initial implementation and continued execution of the system. 
+This paper will discuss what should be present during the initial implementation of a system, in order to get users interested in interacting with the system, and what techniques we can use to keep users motivated through the continued execution of a system. In 2006~\citet[p.~1]{fun-of-use} mentions ``Successful software products should arouse positive emotions'', thus further outlining another aim of software systems in particular that when met can assist in motivation~\citep{fun-of-use}.
+
+\subsection{The City Evolutions Project}
 %introduction to city evolutions project
+Newcastle City Council (NCC) were interested in increasing tourism through Newcastle and in particular through Watt Street. To do this NCC in collaboration with Newcastle Now and the University of Newcastle (UON) developed the City Evolutions Project. The main idea of this project was to promote Newcastle's rich cultural and historical aspects. 
+The project required ten sites to be set up through Watt Street each containing a projector with some sites also housing a computer, a wireless hotspot, and a motion detecting camera. The aim being that material expressing the cultural and historical aspects of Newcastle was projected onto the sides of buildings between sunset and 10pm every day.\\
+In order for this project to be a success the displayed content needs to interest and attract people to Watt street and also motivate them to keep coming back, thus ultimately increasing tourism. Which brings us into the reason for the research that this paper presents.
 
-\section{Current Fields Utilising Technology for User Engagement}
-%where these methods can take effect
-The following sections 
+\section{Current Fields Utilising Technology for User Engagement}\label{sec:current-fields}
+The following sections introduce some areas of everyday life that have implemented systems which rely on user engagement for their success. We also discuss these systems and what goals they set out to achieve.
+
 \subsection{Workplace}
-\subsection{Education}
-\subsection{Therapy}
-\subsection{Community}
 
+In the workplace systems have been introduced in order to share information (such as health plan offerings~\citep{taxonomy-of-gamification})  throughout the company, and increase worker productivity measured through key performance indicators (KPI's).
+Some systems include (but not limited to):
+\begin{itemize}
+	\item{Bonus Schemes}
+	\item{Online portals~\citep{taxonomy-of-gamification}}
+	\item{Inter-office games~\citep{taskville}}
+\end{itemize}
+
+\subsubsection{Taskville}\label{sec:taskville}
+Taskville is one such system designed to be implemented in the workplace~\citep{taskville}. Taskville was designed to ``address key challenges in contemporary distributed and diverse workplaces''~\citep[p.~4]{taskville}. 
+It does this by implementing a game that is to be played by the different groups of an organisation, where each group  has a city in the game that they must grow and control. Taskville implements gamification (see section~\ref{sec:gamification}) techniques such as rewards (see section~\ref{sec:rewards}) in form of in-game currency that can be spent on buildings, and points that are used to define who is the mayor of each city, both of which can be earned by meeting KPI's or completing defined tasks.\\ Taskville was found to increase the awareness of the work performed by other groups within the workplace and at the same time encouraged each individual to outperform other group members in order to reach the title of mayor~\citep{taskville}.
+
+\subsubsection{Agentville}\label{sec:agentville}
+Agentville is a tool developed to assist employees of a call center in managing their KPI's~\citep{production-environments}. As centers already monitor statistics such as:
+\begin{itemize}
+	\item{Average Handle Time (AHT)~\citep{production-environments},}
+	\item{Occupancy~\citep{call-center},}
+	\item{Abandoned calls~\citep{call-center},}
+	\item{Calls answered~\citep{call-center},}
+	\item{Calls offered~\citep{call-center},}
+	\item{Average wait time~\citep{call-center}, and}
+	\item{Grade of service~\citep{call-center}}
+\end{itemize}
+the application was not developed to create more statistics to monitor but to help each individual keep track of their own statistics in relation to the rest of the organisation~\citep{production-environments}.
+
+\subsection{Education}
+
+Used to motivate students, usually through the explicit use of games.
+\subsection{Therapy}
+Used to help patients open up and express themselves
+\subsection{Commercial}
+Used to create and maintain a large customer base
+Starbucks coffee rewards etc
+\subsection{Community}
+Increase tourism and community awareness (general well-being)
 
 \section{Techniques to Enhance User Engagement}
+
+\subsection{Rewards}\label{sec:rewards}
+
+\subsubsection{Extrinsic}
+\subsubsection{Intrinsic}
 
 \subsection{The Skinner Box}
 The Skinner Box is a technique named by B.F. Skinner describing a small cage which houses a small animal, a lever and a way of delivering rewards to the animal~\citep{openingSkinersBox}. The idea was to train the animal to continuously hit the lever. The animal gets rewarded at random intervals for lever pressing, with the possibility of punishment if the lever is not pressed (usually by electric shock). This technique has been around since the 1930’s and has been implemented in video games since their inception~\citep{theSkinnerBox}.
@@ -107,7 +151,7 @@ Game designers have expanded the Skinner Box concept and made it feel like secon
 \\
 The Skinner Box concept is a great way to develop players’ obsession to a game while offering no real world reward, often leaving the player wondering why they wasted so much time on the game~\citep{fiveCreepyWays} 
 
-\subsection{Gamification}
+\subsection{Gamification}\label{sec:gamification}
 Gamification is the process of integrating game dynamics and techniques into non-game processes. This is usually done to increase interaction, productivity or satisfaction.
 \subsubsection{The History of Gamification}
 \subsubsection{Elements in Game Design}
@@ -161,15 +205,14 @@ Gamification takes advantage of various features that are present in game design
 		Macquaries Chest & 2 & Low\\
 		Car Culture & 3 & None\\
 		Lansescape & 34 & Medium\\
-		Coal Collector & 30 & \\
-		Place of Coal & 6 & \\
-		Dreaming & 3 & \\
-		Settling In & 28 & \\
-		Major Morisset & 36 & \\
-		Evolutions & 6 & \\
-		Shanghai & 2 & \\
-		Boom \& Bust & 2 & \\
-		Threlkeld 	&	132 & \\\hline
+		Coal Collector & 36 & Medium\\
+		Dreaming & 3 & None\\
+		Settling In & 28 & Low\\
+		Major Morisset & 36 & Low\\
+		Evolutions & 6 & None\\
+		Shanghai & 2 & Medium\\
+		Boom \& Bust & 2 & Low\\
+		Threlkeld 	&	132 & Medium\\\hline
 	\end{tabular}
 	\caption{City Evolutions Applications and their popularity}
 	\label{table:application-popularity}
@@ -181,7 +224,7 @@ Gamification takes advantage of various features that are present in game design
 	\def\arraystretch{2.5}%  1 is the default, change whatever you need
 	\begin{tabular}{|l|l|}\hline
 		\textbf{Level} 	& \textbf{Description}\\\hline
-		None 	& \pbox{20cm}{No user input is taken at all} \\\hline
+		None 	& \pbox{20cm}{No user input is taken at all, generally a slideshow or movie} \\\hline
 		Low 	& \pbox{20cm}{Generally a single has basic control over the application\\ 
 				  			  i.e. User makes movement to trigger the application to take action.} \\\hline
 		Medium 	& \pbox{20cm}{Users have basic control over the application and are given constant\\
