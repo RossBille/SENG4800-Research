@@ -17,7 +17,7 @@
 \usepackage{epsfig}
 \usepackage{latexsym}
 \usepackage{graphicx}
-\usepackage[square,numbers]{./natbib/natbib}
+\usepackage[square,numbers,sort&compress]{./natbib/natbib}
 \usepackage{url}
 \usepackage{caption}
 \usepackage{subcaption}
@@ -181,23 +181,126 @@ Another educational website, Codecademy, specialises in teaching programming ski
 Researchers have recently been looking into alternate methods for delivering cognitive behavioral therapy to patients, with recent studies showing that computerised methods compare very well with the traditional face to face methods~\citep{games-for-behavior-change}. One of the reasons identified in~\citep{games-for-behavior-change} is the ``difficulty or tediousness of using the tools''~\citep[p.~2]{games-for-behavior-change}, which is one of the issues this paper aims to address (specifically see section~\ref{sec:effort-reduction}).
 
 \subsection{Commercial}
-The commercial industry utilises many different types of systems in order to sell products and keep selling products, with one of the most prominent being rewards systems. Rewards systems in the commercial industry vary from paper based frequent visit cards to digital points tracking systems. The following sections discuss some of these systems and how they are achieving user engagement, as well the benefits to the business.
+The commercial industry utilises many different types of systems in order to sell products and keep selling products, with one of the most prominent being rewards systems. Rewards systems in the commercial industry vary from paper based frequent visit cards to digital points tracking systems. The following sections discuss some of these systems, in particular the digital renditions, and how they are achieving user engagement, as well the benefits to the business.
 
 \subsubsection{Paper Based}
+Paper based rewards cards are on their way out with most companies turning to digitally tracking a customers purchases. Regardless it is still worth mentioning these systems as they form the basis for their digital cousins.
 
+\par
+The basics of these paper based rewards are as follows, customers are given a card that gets stamped or punched every time the customer completes a task (commonly making a purchase), once the customer meets a certain requirement they are rewarded, the reward depends on the business but generally consists of a discount on the next purchase. This form of reward is referred to as an extrinsic reward, section~\ref{sec:extrinsic} will discuss this further.
 
 \subsubsection{Digital}
+Bringing the above mentioned rewards systems into the digital world allows the implementers to expose some extra techniques. One such technique being the introduction of gamification (see section~\ref{sec:gamification}), an example of this is Starbucks rewards system where \textbf{achievements} are earned, such as free refills, after \textbf{leveling up} your reward card through making purchases~\citep{gamifying-intelligent-environments} and interacting with the application that is available along side the card.
 
+\begin{figure}[!ht]
+	\centering
+	\begin{minipage}{.5\textwidth}
+	  \centering
+	  \includegraphics[width=.6\linewidth]{./images/clubCard-boost}
+	  \captionof{figure}{Boost's Club card~\citep{boost}}
+	  \label{clubCard-boost}
+	\end{minipage}%
+	\begin{minipage}{.5\textwidth}
+	  \centering
+	  \includegraphics[width=.6\linewidth]{./images/clubCard-sca}
+	  \captionof{figure}{Super Cheap Auto's Club+ card~\citep{sca}}
+	  \label{clubCard-sca}
+	\end{minipage}
+\end{figure}
+
+\par
+These types of cards are used throughout many different businesses in order to track what users purchase, which ultimately benefits the business. Because using these cards is optional it can be seen that these systems must offer some way of motivating a user.
 
 \subsection{Community}
-Increase tourism and community awareness (general well-being)
+Lately there have been many different applications being published each with the aim to modify the behavior of the general population. The following sections analyse some of these applications and discuss the methods used to increase a users interaction with the application.
 
+\subsubsection{Nike+}
+
+
+\subsubsection{I-GEAR}
+I-GEAR is a project currently being run by the University of Luxembourg in order to encourage commuters to modify their transport behaviors, to ultimately reduce congestion~\citep{igear,igear-2}. Researchers on the I-GEAR project are looking into how gamification techniques can be used to make the project successful.
+
+\subsubsection{RunKeeper}
+RunKeeper is a fitness application dedicated to motivate people to get fit. RunKeeper measures and tracks its users physical activities, helping them set goals and fulfill achievements. RunKeeper pits its users againsts each other in order to utilise their natural desire to win~\citep{desire-to-win}.
+
+\begin{figure}[!ht]
+\centering
+\begin{minipage}{.5\textwidth}
+  \centering
+  \includegraphics[width=.6\linewidth]{./images/application-runkeeper-goals}
+  \captionof{figure}{RunKeeper achievements~\citep{runkeeper}}
+  \label{application-runkeeper-achievements}
+\end{minipage}%
+\begin{minipage}{.5\textwidth}
+  \centering
+  \includegraphics[width=.6\linewidth]{./images/application-runkeeper-socialnetworking}
+  \captionof{figure}{RunKeeper networking~\citep{runkeeper}}
+  \label{application-runkeeper-social}
+\end{minipage}
+\end{figure}
+
+
+\subsubsection{QuitNow!}
+QuitNow! is a smartphone application designed to aid its users through the process of quitting smoking.
+In order to motivate its users QuitNow! tracks their success in the form of achievements, rewarding them with badges in order to ``motivate you[its users] to achieve your goal''\citep{quitnow}. QuitNow! also implements an internal social networking aspect in order to utilise our natural competitive desire~\citep{bread-and-games}.\\
+
+\begin{figure}[!ht]
+\centering
+\begin{minipage}{.5\textwidth}
+  \centering
+  \includegraphics[width=.6\linewidth]{./images/application-quitnow-achievements}
+  \captionof{figure}{QuitNow! achievements~\citep{quitnow}}
+  \label{application-quitnow-achievements}
+\end{minipage}%
+\begin{minipage}{.5\textwidth}
+  \centering
+  \includegraphics[width=.6\linewidth]{./images/application-quitnow-social}
+  \captionof{figure}{QuitNow! networking~\citep{quitnow}}
+  \label{application-quitnow-social}
+\end{minipage}
+\end{figure}
+
+QuitNow!'s success can be measured through the feedback received through their Google Play store page, such as; \\
+
+\indent\textbf{``Love it! I like that it resets the time if you slip and have a cigarette. It frustrated me to have to start over again, which I think helped me quit faster. Love the social part and the achievements you can earn. It's just great! Almost six months so far!''}~\citep{quitnow},\\and\\ 
+
+\indent\textbf{``I love seeing how many cigarettes I've not smoked and the money I've saved. When I need an extra push the image galley is a nice reminder of why I'm quitting.''}~\citep{quitnow};\\
+
+however some concerns are also raised in relation to the social networking aspect, evident by a users feedback of\\ 
+
+\indent\textbf{``Too many people being racist or taking mick out of disabled people or just purely trolling quite bad when all peopld want Is support when quitting!!!''}~\citep{quitnow}, which will be addressed in section~\ref{sec:social-media}.
+
+\newpage
 \section{Techniques to Enhance User Engagement}\label{sec:techniques-to-enhance}
+The following section will discuss some methods and techniques that can be used in order to increase user engagement with, and their satisfaction in the system.
 
 \subsection{Rewards}\label{sec:rewards}
+Rewards have been mentioned throughout section~\ref{sec:current-fields} as a means for motivation throughout all types of systems currently in operation today.
+This section aims to divide the set of rewards into two subsets; being extrinsic and intrinsic~\citep{bread-and-games,fun-of-use,deci_extrinsic_2001,McGonigal:2011:RBW:1972527}, in order to obtain a better understanding of how rewards should be utilised in the systems we implement in future.
 
-\subsubsection{Extrinsic}
-\subsubsection{Intrinsic}
+\subsubsection{Extrinsic}\label{sec:extrinsic}
+Extrinsic rewards are those which are external to the user~\citep{deci_extrinsic_2001,McGonigal:2011:RBW:1972527} and can be rewards such as:
+\begin{itemize}
+	\item{Monetary,}
+	\item{In-game currency~\citep{bread-and-games},}
+	\item{Score~\citep{bread-and-games},}
+	\item{Entries in a leader board~\citep{bread-and-games},}
+	\item{Promotions,}
+	\item{Leveling up~\citep{bread-and-games}, and}
+	\item{Trophies}
+\end{itemize}
+
+\subsubsection{Intrinsic}\label{sec:intrinsic}
+Intrinsic rewards are more personal to the user~\citep{patient-education-and-training}, some examples of intrinsic rewards are as follows:
+\begin{itemize}
+	\item{Enjoyment}
+	\item{Challenge}
+	\item{Excitement}
+	\item{Education}
+\end{itemize}
+
+\subsubsection{Summary}
+To summerise, rewards are an essential part of motivating a user to engage with a system; however care needs to be taken with what types of rewards are selected. It is important not to implement an unreasonable amount of extrinsic rewards as this can leave a user feeling bought and unaccomplished~\citep{openingSkinersBox,theSkinnerBox,McGonigal:2011:RBW:1972527,bread-and-games} sometimes making playing a game feel like doing work~\citep{turning-play-into-work}, instead extrinsic rewards should be added to complement intrinsic rewards and thus making them feel intrinsic as well. This all helps to create a system that increases satisfaction in the user, motivates a user to achieve higher goals within the system, provides higher productivity, and keeps the user feeling free and competent~\citep{intrinsic-motivation}.
 
 \subsection{The Skinner Box}
 The Skinner Box is a technique named by B.F. Skinner describing a small cage which houses a small animal, a lever and a way of delivering rewards to the animal~\citep{openingSkinersBox}. The idea was to train the animal to continuously hit the lever. The animal gets rewarded at random intervals for lever pressing, with the possibility of punishment if the lever is not pressed (usually by electric shock). This technique has been around since the 1930’s and has been implemented in video games since their inception~\citep{theSkinnerBox}.
@@ -205,24 +308,47 @@ The Skinner Box is a technique named by B.F. Skinner describing a small cage whi
 \par
 Game designers have expanded the Skinner Box concept and made it feel like second nature to players. They have done this by offering virtual rewards to players who achieve pre-defined goals (this is obvious in any games that have levels and/or virtual currency) and recently by punishing players for not playing regularly (usually by devaluing the players hard earned virtual currency or by making in-game possessions deteriorate).
  \par
-The Skinner Box concept is a great way to develop players’ obsession to a game while offering no real world reward, often leaving the player wondering why they wasted so much time on the game~\citep{fiveCreepyWays} 
+The Skinner Box concept is a great way to develop players’ obsession to a game while offering no real world reward, instead just extrinsic rewards, often leaving the player wondering why they wasted so much time on the game~\citep{fiveCreepyWays,bread-and-games}. 
 
 \subsection{Gamification}\label{sec:gamification}
 Gamification is the process of integrating game dynamics and techniques into non-game processes. This is usually done to increase interaction, productivity or satisfaction.
+
 \subsubsection{The History of Gamification}
+
 \subsubsection{Elements in Game Design}
 Gamification takes advantage of various features that are present in game design. The following paragraphs discuss the effectiveness of these features as well as the importance of their potential applications in enhancing user interactions beyond the gaming culture. 
-\paragraph{\indent~Rewards}
-\paragraph{\indent~Competition}
-\paragraph{\indent~Stories}
+
+\paragraph{\indent~Rewards.}
+Rewards have already been discussed thoroughly in section~\ref{sec:rewards}, here we discuss how rewards are present in the gaming environment and how they can be used in other systems. 
+
+\paragraph{\indent~Competition.}
+
+\paragraph{\indent~Stories.}
 
 \subsection{Virtual Reality}
+
 \subsection{Effort Reduction}\label{sec:effort-reduction}
+
 \subsection{Usability}
+
 \subsection{Social Media}\label{sec:social-media}
+
 \subsection{Education}
-%closing the loop etc
-%o
+
+\subsection{Summary}
+In order for a system to be motivating; it should offer some kind of intrinsic reward to the user, which is easier to implement if the system already has a meaning purpose that would interest the user on its own; such as: a system that aims to educate, a system that assists a worker in their job, or a system that assists a user to do their day-to-day tasks.
+
+\par
+A system should be interesting, in order to do this new content should be added regularly. The system needs a point i.e. the system shouldn't be designed with the main aim of encouraging users to use it, because if the user doesn't get anything out of it then there is not reason for the user to interact with the system. 
+In addition to the point of the system, it is important to have enough interesting content so the user is not constantly thinking about what they are trying to achieve. There is a delicate balance here between being to the point and being distracting.
+
+\par
+The system must not be difficult to use, users should not need to learn a new technology or interface to interact with the system. 37\% of Australians have a smartphone, with countries such as Singapore showing a penetration of 62\%~\citep{smartphone-use-in-au}, this provides a basic tool to be utilising in these systems.
+
+\par
+Humans have a natural desire to compete~\citep{bread-and-games}, this can be leveraged in the systems we design through tools such as; leader boards, and achievements, in order to make a system naturally motivating.
+Social media in a great way to advertise these achievements to bring the competition to a grander scale; however care should be taken to avoid slanderous comments from non-constructive individuals, usually taken care of by giving the user control over who can see their updates.
+
 \newpage
 \section{City Evolutions}
 \subsection{Analysis}
@@ -354,6 +480,7 @@ Give an extended and detailed discussion of your study. explain what we can lear
 %
 A brief final summary of the main achievements and outcomes. Possibly some suggestions for future work that can follow on from your project.%
 
+
 \section{Glossary}
 %
 \subsection*{Acknowledgements}
@@ -363,5 +490,6 @@ The author is grateful to ....
 \newpage
 \bibliographystyle{apalike}
 \bibliography{./literature.bib}
+
 
 \end{document}
