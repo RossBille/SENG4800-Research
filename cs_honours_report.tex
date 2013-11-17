@@ -93,7 +93,7 @@ Systems are created daily to achieve a set of goals, these goals vary greatly de
 This interaction needs to be present throughout the entire life cycle of the system; however this paper will mainly discuss two phases of this life cycle, the initial implementation and continued execution of the system. 
 This paper will discuss what should be present during the initial implementation of a system, in order to get users interested in interacting with the system, and what techniques we can use to keep users motivated through the continued execution of a system. In 2006~\citet[p.~1]{fun-of-use} mentions ``Successful software products should arouse positive emotions'', thus further outlining another aim of software systems in particular that when met can assist in motivation~\citep{fun-of-use}.
 
-\subsection{The City Evolutions Project}
+\subsection{The City Evolutions Project}\label{sec:city-evolutions-project}
 %introduction to city evolutions project
 Newcastle City Council (NCC) were interested in increasing tourism through Newcastle and in particular through Watt Street. To do this NCC in collaboration with Newcastle Now and the University of Newcastle (UON) developed the City Evolutions Project. The main idea of this project was to promote Newcastle's rich cultural and historical aspects. 
 The project required ten sites to be set up through Watt Street each containing a projector with some sites also housing a computer, a wireless hotspot, and a motion detecting camera. The aim being that material expressing the cultural and historical aspects of Newcastle was projected onto the sides of buildings between sunset and 10pm every day.\\
@@ -115,13 +115,20 @@ Extrinsic rewards are those which are external to the user~\citep{deci_extrinsic
 Intrinsic rewards are more personal to the user~\citep{patient-education-and-training}, some examples of intrinsic rewards are as follows: enjoyment, Challenge, Excitement, and Education~\citep{bread-and-games}.
 
 \subsubsection{Summary}
-To summarise, rewards are an essential part of motivating a user to engage with a system; however care needs to be taken with what types of rewards are selected. It is important not to implement an unreasonable amount of extrinsic rewards as this can leave a user feeling bought and unaccomplished~\citep{openingSkinersBox,theSkinnerBox,McGonigal:2011:RBW:1972527,bread-and-games} sometimes making playing a game feel like doing work~\citep{turning-play-into-work}. Instead extrinsic rewards should be added to complement intrinsic rewards and thus making them feel intrinsic as well. This all helps to create a system that increases satisfaction in the user, motivates a user to achieve higher goals within the system, provides higher productivity, and keeps the user feeling free and competent~\citep{intrinsic-motivation}.
+To summarise, rewards are an essential part of motivating a user to engage with a system; however care needs to be taken with what types of rewards are selected. It is important not to implement an unreasonable amount of extrinsic rewards as this can leave a user feeling bought and unaccomplished~\citep{openingSkinersBox,theSkinnerBox,McGonigal:2011:RBW:1972527,bread-and-games} sometimes making playing a game feel like doing work~\citep{turning-play-into-work}. 
+Instead extrinsic rewards should be added to complement intrinsic rewards and thus making them feel intrinsic as well. 
+This all helps to create a system that increases satisfaction in the user, motivates a user to achieve higher goals within the system, provides higher productivity, and keeps the user feeling free and competent~\citep{intrinsic-motivation}.
 
 \subsection{The Skinner Box}
-The Skinner Box is a technique named by B.F. Skinner describing a small cage which houses a small animal, a lever and a way of delivering rewards to the animal~\citep{openingSkinersBox}. The idea was to train the animal to continuously hit the lever. The animal gets rewarded at random intervals for lever pressing, with the possibility of punishment if the lever is not pressed (usually by electric shock). This technique has been around since the 1930’s and has been implemented in video games since their inception~\citep{theSkinnerBox}.
+The Skinner Box is a technique named by B.F. Skinner describing a small cage which houses a small animal, a lever and a way of delivering rewards to the animal~\citep{openingSkinersBox}. 
+The idea was to train the animal to continuously hit the lever. 
+The animal gets rewarded at random intervals for lever pressing, with the possibility of punishment if the lever is not pressed (usually by electric shock). 
+This technique has been around since the 1930’s and has been implemented in video games since their inception~\citep{theSkinnerBox}.
 
 \par
-Game designers have expanded the Skinner Box concept and made it feel like second nature to players. They have done this by offering virtual rewards to players who achieve pre-defined goals (this is obvious in any games that have levels and/or virtual currency) and recently by punishing players for not playing regularly (usually by devaluing the players hard earned virtual currency or by making in-game possessions deteriorate).
+Game designers have expanded the Skinner Box concept and made it feel like second nature to players. 
+They have done this by offering virtual rewards to players who achieve pre-defined goals (this is obvious in any games that have levels and/or virtual currency) and recently by punishing players for not playing regularly (usually by devaluing the players hard earned virtual currency or by making in-game possessions deteriorate).
+
 \par
 The Skinner Box concept is a great way to develop players’ obsession with a game while offering no real world reward, instead just extrinsic rewards, often leaving the player wondering why they wasted so much time on the game~\citep{fiveCreepyWays,bread-and-games}. 
 
@@ -136,7 +143,7 @@ Gamification takes advantage of various features that are present in game design
 \par
 \textbf{Rewards}\\
 Rewards have already been discussed thoroughly in section~\ref{sec:rewards}, here we discuss how rewards are present in the gaming environment and how they can be used in other systems. 
-Within a gaming context a player is rewarded throughout the entire game for an array of tasks that differ between the types of game such as role playing games (RPGs), racing games, and many more which are summarised in table~\ref{table:game-rewards}.
+Within a gaming context a player is rewarded throughout the entire game for an array of tasks that differ between the types of game such as role playing games (RPGs), racing games, first person shooters {FPS}, and many more which are summarised in table~\ref{table:game-rewards}.
 
 \begin{table}[!ht]
 	%\centering
@@ -144,22 +151,38 @@ Within a gaming context a player is rewarded throughout the entire game for an a
 		\textbf{Game type} & 	\textbf{Activity} & \textbf{Reward} \\\hline
 		Racing 	&	Defeating other racers 	& In-game currency, leader board\\
 		Racing	&	Beating set lap times	& Achievements, badges\\
-		RPGs 	& Completing quests & In-game currency/items\\
+		RPGs 	&  	Completing quests & In-game currency/items\\
 		RPGs 	&	Defeating other players & Leader board\\
-		RPGs 	& 	Completing tasks x times & Experience points, in-game currency\\
-		 & & \\\hline
+		RPGs 	& 	Completing tasks X times & Experience points, in-game currency\\
+		FPS 	&	Killing an enemy	& Experience points, in-game currency\\
+		FPS 	&	Killing X enemies	& Achievements, in-game currency\\
+		Online 	&	Logging in X days in a row & Achievements, leader board\\\hline
 	\end{tabular}
 	\caption{Rewards for activities commonly found in games.}
 	\label{table:game-rewards}
 \end{table}
 
+Rewards within other environments need to be considered on a case-by-case basis because generic rewards tend to be extrinsic~\citep{deci_extrinsic_2001}. Rewards should be thought of as an addition to assist in motivating a user, not the sole motivator.
+
 \par
 \textbf{Competition}\\
+Humans are naturally competitive beings and games leverage this in order to keep us motivated~\citep{bread-and-games}. 
+Competition usually leads to one of two things, the intrinsic reward or extra motivation to try harder next time.
 
 \par
 \textbf{Stories}\\
+Stories can engage people both emotionally and intellectually, while feeding off our natural desire to know how the story ends.
+They can engage the user through fantasy and suspense which is why stories are a key motivational aspect of games~\citep{Narrative-Centered-Learning-Environments}.\\
+These same stories can assist in motivating users to engage with any type of application or system~\citep{applications-as-stories}. 
+They can help to take alleviate the pressure on a user from an system that is overwhelmingly rich in content by breaking it up and guiding the user through the system~\citep{applications-as-stories,brown_human-computer_1998,lidwell_universal_2010}.
 
-\subsection{Virtual Reality}
+\par
+\textbf{Avatars}\\
+Avatars are in-game representations of a user. 
+Research by~\citet{self-modeling} has shown that avatars that resemble the user can be highly effective at motivating that user to behave in a desired way, thus another key technique in enhancing user engagement~\citep{bread-and-games}.
+
+\subsection{Virtual Reality}\label{sec:virtual-reality}
+
 
 \subsection{Effort Reduction}\label{sec:effort-reduction}
 
@@ -168,25 +191,28 @@ Within a gaming context a player is rewarded throughout the entire game for an a
 \subsection{Social Media}\label{sec:social-media}
 
 \subsection{Education}
-
+%closing the loop ~\citep{applications-as-stories}
 \subsection{Summary}
-In order for a system to be motivating; it should offer some kind of intrinsic reward to the user, which is easier to implement if the system already has a meaningful purpose that would interest the user within itself. For example, systems that aims to educate, assists a worker in their job or assists a user to do their day-to-day tasks.
+In order for a system to be motivating; it should offer some kind of intrinsic reward to the user, which is easier to implement if the system already has a meaningful purpose that would interest the user within itself. 
+For example, systems that aims to educate, assists a worker in their job or assists a user to do their day-to-day tasks.
 
 \par
 A system should be interesting, in order to do this new content should be added regularly. 
 The system needs an end design, that is; a system shouldn't be designed with the main aim of encouraging users to use it, because if the user doesn't get anything out of it then there is not reason for the user to interact with the system. 
-In addition to the point of the system, it is important to have enough interesting content so the user is not constantly thinking about what they are trying to achieve. There is a delicate balance here between being to the point and being distracting.
+In addition to the point of the system, it is important to have enough interesting content so the user is not constantly thinking about what they are trying to achieve. 
+There is a delicate balance here between being to the point and being distracting.
 
 \par
-The system must not be difficult to use, users should not need to learn a new technology or interface to interact with the system. Murton has shown that 37\% of Australians have a smartphone, with countries such as Singapore showing a penetration of 62\%~\citep{smartphone-use-in-au}, this provides a basic tool to be utilising in these systems.
+The system must not be difficult to use, users should not need to learn a new technology or interface to interact with the system. 
+Murton has shown that 37\% of Australians have a smartphone, with countries such as Singapore showing a penetration of 62\%~\citep{smartphone-use-in-au}, this provides a basic tool to be utilising in these systems.
 
 \par
 Humans have a natural desire to compete~\citep{bread-and-games}, this can be leveraged in the systems we design through tools such as leader boards and achievements, in order to make a system naturally motivating.
 Social media is a great way to advertise these achievements to bring the competition to a grander scale; however care should be taken to avoid slanderous comments from non-constructive individuals, usually taken care of by giving the user control over who can see their updates.
 
-
 \section{Current Fields Utilising Technology for User Engagement}\label{sec:current-fields}
-The following sections introduce some areas of everyday life that have implemented systems which rely on user engagement for their success. We also discuss these systems and what goals they set out to achieve and how they have achieved them.
+The following sections introduce some areas of everyday life that have implemented systems which rely on user engagement for their success. 
+I will also discuss these systems and what goals they set out to achieve and how they have achieved them.
 
 \subsection{Workplace}
 
@@ -200,10 +226,13 @@ Some systems include (but not limited to):
 
 \subsubsection{Taskville}\label{sec:taskville}
 Taskville is one such system designed to be implemented in the workplace~\citep{taskville}. Taskville was designed to ``address key challenges in contemporary distributed and diverse workplaces''~\citep[p.~4]{taskville}. 
-It does this by implementing a game that is to be played by the different groups of an organisation, where each group  has a city in the game that they must grow and control. Taskville implements gamification (see section~\ref{sec:gamification}) techniques such as rewards in the form of in-game currency and points, both of which can be earned by meeting KPI's or completing defined tasks.\\ Taskville was found to increase the awareness of the work performed by other groups within the workplace and at the same time encouraged each individual to outperform other group members in order to reach the title of mayor~\citep{taskville}.
+It does this by implementing a game that is to be played by the different groups of an organisation, where each group  has a city in the game that they must grow and control. Taskville implements gamification (see section~\ref{sec:gamification}) techniques such as rewards in the form of in-game currency and points, both of which can be earned by meeting KPI's or completing defined tasks.\\ 
+Taskville was found to increase the awareness of the work performed by other groups within the workplace and at the same time encouraged each individual to outperform other group members in order to reach the title of mayor~\citep{taskville}.
 
 \subsubsection{Agentville}\label{sec:agentville}
-Agentville is a tool developed to assist employees of a call center in managing their KPI's~\citep{production-environments}. As call centers already monitor statistics such as: Average Handle Time (AHT)~\citep{production-environments},	Occupancy, Abandoned calls,	Calls answered,	Calls offered, Average wait time, and Grade of service~\citep{call-center}. The application was not developed to create more statistics to monitor but to help each individual keep track of their own statistics in relation to the rest of the organisation~\citep{production-environments}.
+Agentville is a tool developed to assist employees of a call center in managing their KPI's~\citep{production-environments}. 
+As call centers already monitor statistics such as: Average Handle Time (AHT)~\citep{production-environments},	Occupancy, Abandoned calls,	Calls answered,	Calls offered, Average wait time, and Grade of service~\citep{call-center}. 
+The application was not developed to create more statistics to monitor but to help each individual keep track of their own statistics in relation to the rest of the organisation~\citep{production-environments}.
 
 \subsection{Education}\label{sec:education}
 Educational institutes implement many different systems with many different aims, two such aims are: handling behavior and motivating students to learn~\citep{deci_extrinsic_2001}.
@@ -238,7 +267,8 @@ Coursera is an online collaboration of universities including:
 Coursera aims to create a collaborative environment for users to learn and teach each other. The universities that contribute to Coursera use the above mentioned technique of streaming lectures to students and users. Additionally there are more techniques that are implemented in order to assist in motivating students, one of these techniques is the use of social media to share achievements which will be explained in more depth in sections~\ref{sec:gamification} and~\ref{sec:social-media}.
 
 \par
-Another educational website, Codecademy, specialises in teaching programming skills in various languages. A student is given the option to choose what they want to learn and they can set their own pace, giving the students a sense of autonomy which has been found to assist with intrinsic motivation~\citep{bread-and-games}. Codecademy also implements a few gamification techniques (see section~\ref{sec:gamification}) such as badges (Figure~\ref{codecademy-badges}) mixed with social media aspects (see section~\ref{sec:social-media}) to keep the student coming back day after day.	
+Another educational website, Codecademy, specialises in teaching programming skills in various languages. A student is given the option to choose what they want to learn and they can set their own pace, giving the students a sense of autonomy which has been found to assist with intrinsic motivation~\citep{bread-and-games}. 
+Codecademy also implements a few gamification techniques (see section~\ref{sec:gamification}) such as badges (Figure~\ref{codecademy-badges}) mixed with social media aspects (see section~\ref{sec:social-media}) to keep the student coming back day after day.	
 
 \begin{figure}[!ht]
 	\centering
@@ -265,16 +295,21 @@ Researchers have recently been looking into alternate methods for delivering cog
 
 
 \subsection{Commercial}
-The commercial industry utilises many different types of systems in order to sell products and keep selling products, with one of the most prominent being rewards systems. Rewards systems in the commercial industry vary from paper based frequent visit cards to digital points tracking systems. The following sections discuss some of these systems, in particular the digital renditions and how they are achieving user engagement, as well the benefits to the business.
+The commercial industry utilises many different types of systems in order to sell products and keep selling products, with one of the most prominent being rewards systems. 
+Rewards systems in the commercial industry vary from paper based frequent visit cards to digital points tracking systems. 
+The following sections discuss some of these systems, in particular the digital renditions and how they are achieving user engagement, as well the benefits to the business.
 
 \subsubsection{Paper Based}
-Paper based rewards cards are on their way out with most companies turning to digitally tracking a customers purchases. Regardless it is still worth mentioning these systems as they form the basis for their digital cousins.
+Paper based rewards cards are on their way out with most companies turning to digitally tracking a customers purchases. 
+Regardless it is still worth mentioning these systems as they form the basis for their digital cousins.
 
 \par
-The basics of these paper based rewards are as follows; customers are given a card that gets stamped or punched every time the customer completes a task (commonly making a purchase), once the customer meets a certain requirement they are rewarded, the reward depends on the business but generally consists of a discount on the next purchase. This form of reward is referred to as an extrinsic reward, section~\ref{sec:extrinsic} will discuss this further.
+The basics of these paper based rewards are as follows; customers are given a card that gets stamped or punched every time the customer completes a task (commonly making a purchase), once the customer meets a certain requirement they are rewarded, the reward depends on the business but generally consists of a discount on the next purchase. 
+This form of reward is referred to as an extrinsic reward, section~\ref{sec:extrinsic} will discuss this further.
 
 \subsubsection{Digital}
-Bringing the above mentioned rewards systems into the digital world allows the implementers to incorporate some extra techniques; one such technique being the introduction of gamification (see section~\ref{sec:gamification}). An example of this is Starbucks rewards system where 'achievements' are earned, such as free refills, after 'leveling up' your reward card through making purchases~\citep{gamifying-intelligent-environments} and interacting with the application that is available alongside the card.
+Bringing the above mentioned rewards systems into the digital world allows the implementers to incorporate some extra techniques; one such technique being the introduction of gamification (see section~\ref{sec:gamification}). 
+An example of this is Starbucks rewards system where 'achievements' are earned, such as free refills, after 'leveling up' your reward card through making purchases~\citep{gamifying-intelligent-environments} and interacting with the application that is available alongside the card.
 
 \begin{figure}[!ht]
 	\centering
@@ -293,19 +328,24 @@ Bringing the above mentioned rewards systems into the digital world allows the i
 \end{figure}
 
 \par
-These types of cards are used throughout many different businesses in order to track what users purchase, which ultimately benefits the business. Because using these cards is optional it can be seen that these systems must offer some way of motivating a user to ensure ongoing interaction.
+These types of cards are used throughout many different businesses in order to track what users purchase, which ultimately benefits the business. 
+Because using these cards is optional it can be seen that these systems must offer some way of motivating a user to ensure ongoing interaction.
 
 \subsection{Community}
-Lately there have been many different applications being published, each with the aim to modify the behavior of the general population. The following sections analyse some of these applications and discuss the methods used to increase a users interaction with the application.
+Lately there have been many different applications being published, each with the aim to modify the behavior of the general population. 
+The following sections analyse some of these applications and discuss the methods used to increase a users interaction with the application.
 
 \subsubsection{Nike+}
 
 
 \subsubsection{I-GEAR}
-I-GEAR is a project currently being run by the University of Luxembourg in order to encourage commuters to modify their transport behaviors to ultimately reduce congestion~\citep{igear,igear-2}. Researchers on the I-GEAR project are looking into how gamification techniques can be used to make the project successful.
+I-GEAR is a project currently being run by the University of Luxembourg in order to encourage commuters to modify their transport behaviors to ultimately reduce congestion~\citep{igear,igear-2}. 
+Researchers on the I-GEAR project are looking into how gamification techniques can be used to make the project successful.
 
 \subsubsection{RunKeeper}
-RunKeeper is a fitness application dedicated to motivate people to get fit. RunKeeper measures and tracks its users physical activities, helping them set goals and fulfill achievements. RunKeeper pits its users against each other in order to utilise their natural desire to win~\citep{desire-to-win}.
+RunKeeper is a fitness application dedicated to motivate people to get fit. 
+RunKeeper measures and tracks its users physical activities, helping them set goals and fulfill achievements. 
+RunKeeper pits its users against each other in order to utilise their natural desire to win~\citep{desire-to-win}.
 
 \begin{figure}[!ht]
 \centering
@@ -326,7 +366,8 @@ RunKeeper is a fitness application dedicated to motivate people to get fit. RunK
 
 \subsubsection{QuitNow!}
 QuitNow! is a smartphone application designed to aid its users through the process of quitting smoking.
-In order to motivate its users QuitNow! tracks their success in the form of achievements, rewarding them with badges in order to ``motivate you[its users] to achieve your goal''\citep{quitnow}. QuitNow! also implements an internal social networking aspect in order to utilise our natural competitive desire~\citep{bread-and-games}.\\
+In order to motivate its users QuitNow! tracks their success in the form of achievements, rewarding them with badges in order to ``motivate you[its users] to achieve your goal''\citep{quitnow}. 
+QuitNow! also implements an internal social networking aspect in order to utilise our natural competitive desire~\citep{bread-and-games}.\\
 
 \begin{figure}[!ht]
 \centering
@@ -360,13 +401,26 @@ The potential pitfalls of social media are explored further in this section~\ref
 
 \newpage
 \section{City Evolutions}
+Section~\ref{sec:city-evolutions-project} introduced the City Evolutions project and its aims, this section will critically analyse the implementation of the project.
+This section will additionally make some suggestions at new approaches for the project aimed at increasing the amount of interaction between the users and the system.
+
 \subsection{Analysis}
-Analyse the current setup of the city evolutions project.\\
-discuss the current statistics:
-\begin{itemize}
-	\item{Good points (project clearly had a boost on open)}
-	\item{Bad points (users aren't motivated to keep coming back and scanning the qr code because there isnt a lot of new material)}
-\end{itemize}
+The hardware installed on Watt Street is sufficient at this point in time to support high amounts of interaction, instead this section will focus on the current applications that are running. 
+Every site along Watt Street has a QR code associated with it (Figure~\ref{QR-threkeld-barcode}), when scanned these QR codes direct the user to information about the site. 
+\begin{figure}[ht!]
+	\centering
+	\includegraphics[width=40mm]{./images/qrcode-threlkeld}
+	\caption{QR Code - Threlkeld Speak}
+	\label{QR-threkeld-barcode}
+\end{figure}
+The level of interaction is primarily measured through the amount of scans that have been logged per QR code. 
+This method was chosen because of the relationship between how interested a user is with the content at a site and their desire to learn more about it.
+
+\subsubsection{Results}
+Figure~\ref{QR-overall-access-overTime} shows the overall activity since the projects launch in June. 
+It can be seen that initial interest was high, the peaks can be explained by the amount of advertisement the project saw in its early stages. 
+Unfortunately a drop in the number of scans can be seen resulting in little to no activity at any of the sites from August onwards.
+Without the advertisement it appears as if the content delivered by the project is not enough to keep users interested or motivated.
 
 \begin{figure}[ht!]
 	\centering
@@ -375,28 +429,10 @@ discuss the current statistics:
 	\label{QR-overall-access-overTime}
 \end{figure}
 
-\begin{figure}[ht!]
-	\centering
-	\includegraphics[width=50mm]{./images/OSAccess}
-	\caption{QR Code - OS spread}
-	\label{QR-OS-access}
-\end{figure}
+\par
+It is beneficial to analyse each application in order to get a better of representation of what types of applications motivated users the most. Table~\ref{table:application-popularity} shows this breakdown including a breakdown of the types of interaction utilised in each application shown in table~\ref{table:interactivity-description}.
 
-\begin{figure}[ht!]
-	\centering
-	\includegraphics[width=150mm]{./images/threkeld-scans}
-	\caption{QR Code - Threlkeld Speak scans}
-	\label{QR-threkeld}
-\end{figure}
-
-\begin{figure}[ht!]
-	\centering
-	\includegraphics[width=50mm]{./images/qrcode-threlkeld}
-	\caption{QR Code - Threlkeld Speak}
-	\label{QR-threkeld-barcode}
-\end{figure}
-
-\begin{table}
+\begin{table}[ht!]
 	\centering
 	\begin{tabular}{|c|c|c|}\hline
 		\textbf{Application} & 	\textbf{Number of Scans} & \textbf{Interactivity (see table~\ref{table:interactivity-description})} \\\hline
@@ -416,7 +452,7 @@ discuss the current statistics:
 	\label{table:application-popularity}
 \end{table}
 
-\begin{table}
+\begin{table}[ht!]
 	\centering
 	\bgroup
 	\def\arraystretch{2.5}%  1 is the default, change whatever you need
@@ -435,6 +471,30 @@ discuss the current statistics:
 	\caption{Description of interactivity levels used in table~\ref{table:application-popularity}}
 	\label{table:interactivity-description}
 \end{table}
+
+\par
+Table~\ref{table:application-popularity} also shows that the Threlkeld application was the most popular and therefor a more thorough analysis of this application needs to be performed. Figure~\ref{QR-threkeld} shows the amount of scans that the Threlkeld application received over its time in operation. 
+It is worth noting that the application ceased running on the first week of October 2013 due to building works rendering it impossible to project onto the church.
+
+\begin{figure}[ht!]
+	\centering
+	\includegraphics[width=150mm]{./images/threkeld-scans}
+	\caption{QR Code - Threlkeld Speak scans}
+	\label{QR-threkeld}
+\end{figure}
+
+\par
+Lastly figure~\ref{QR-OS-access} shows which operating systems were used to make the scans.
+\begin{figure}[ht!]
+	\centering
+	\includegraphics[width=50mm]{./images/OSAccess}
+	\caption{QR Code - OS spread}
+	\label{QR-OS-access}
+\end{figure}
+
+
+
+
 
 \newpage
 \subsection{Proposal}
