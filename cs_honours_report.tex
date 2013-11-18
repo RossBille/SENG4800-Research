@@ -440,7 +440,7 @@ QuitNow!'s success can be measured through the feedback received through their G
 Despite these successes however some concerns have been raised in relation to the social networking aspect, evident by a users feedback of:\ 
 
 \indent\textbf{``Too many people being racist or taking mick out of disabled people or just purely trolling quite bad when all peopld want Is support when quitting!!!''}~\citep{quitnow}
-The potential pitfalls of social media are explored further in this section~\ref{sec:social-media}.
+The potential pitfalls of social media are explored further in section~\ref{sec:social-media}.
 
 \subsubsection{Vivid}
 
@@ -450,8 +450,10 @@ The potential pitfalls of social media are explored further in this section~\ref
 Section~\ref{sec:city-evolutions-project} introduced the City Evolutions project and its aims, this section will critically analyse the implementation of the project.
 This section will additionally make some suggestions at new approaches for the project aimed at increasing the amount of interaction between the users and the system.
 
-\subsection{Analysis}
-The hardware installed on Watt Street is sufficient at this point in time to support high amounts of interaction, instead this section will focus on the current applications that are running. 
+\subsection{Analysis}\label{sec:analysis}
+The hardware installed on Watt Street is sufficient at this point in time to support high amounts of interaction, instead this section will focus on the current applications that are running in order to point out the good and bad points. 
+
+\par
 Every site along Watt Street has a QR code associated with it (Figure~\ref{QR-threkeld-barcode}), when scanned these QR codes direct the user to information about the site. 
 \begin{figure}[ht!]
 	\centering
@@ -465,7 +467,7 @@ This method was chosen because of the relationship between how interested a user
 \subsubsection{Results}
 Figure~\ref{QR-overall-access-overTime} shows the overall activity since the projects launch in June. 
 It can be seen that initial interest was high, the peaks can be explained by the amount of advertisement the project saw in its early stages. 
-Unfortunately a drop in the number of scans can be seen resulting in little to no activity at any of the sites from August onwards.
+Unfortunately a drop in the number of scans can be seen representing little to no activity at any of the sites from August onwards.
 Without the advertisement it appears as if the content delivered by the project is not enough to keep users interested or motivated.
 
 \begin{figure}[ht!]
@@ -474,9 +476,6 @@ Without the advertisement it appears as if the content delivered by the project 
 	\caption{QR Code - Overall scans}
 	\label{QR-overall-access-overTime}
 \end{figure}
-
-\par
-It is beneficial to analyse each application in order to get a better of representation of what types of applications motivated users the most. Table~\ref{table:application-popularity} shows this breakdown including a breakdown of the types of interaction utilised in each application shown in table~\ref{table:interactivity-description}.
 
 \begin{table}[ht!]
 	\centering
@@ -487,12 +486,11 @@ It is beneficial to analyse each application in order to get a better of represe
 		Lansescape & 34 & Medium\\
 		Coal Collector & 36 & Medium\\
 		Dreaming & 3 & None\\
-		Settling In & 28 & Low\\
 		Major Morisset & 36 & Low\\
 		Evolutions & 6 & None\\
 		Shanghai & 2 & Medium\\
 		Boom \& Bust & 2 & Low\\
-		Threlkeld 	&	132 & Medium\\\hline
+		Threlkeld Speak	&	132 & Medium\\\hline
 	\end{tabular}
 	\caption{City Evolutions Applications and their popularity}
 	\label{table:application-popularity}
@@ -519,10 +517,19 @@ It is beneficial to analyse each application in order to get a better of represe
 \end{table}
 
 \par
-Table~\ref{table:application-popularity} also shows that the Threlkeld application was the most popular and therefor a more thorough analysis of this application needs to be performed. 
-Figure~\ref{QR-threkeld} shows the amount of scans that the Threlkeld application received over its time in operation. 
-It is worth noting that the application ceased running on the first week of October 2013 due to building works rendering it impossible to project onto the church.
+It is beneficial to analyse each application in order to get a better of representation of what types of applications motivated users the most. Table~\ref{table:application-popularity} shows this breakdown including a breakdown of the types of interaction utilised in each application shown in table~\ref{table:interactivity-description}.
 
+\par
+\textbf{Threlkeld Speak}\\
+Table~\ref{table:application-popularity} shows that the Threlkeld Speak application was the most popular application on Watt Street.
+Threlkeld Speak consisted of a set of movies that represented words from the Awakabal language. The aim was to educate users on the history of this native language though visual displays of the words.
+Users were given control over which movie-word pair was displayed from the projector through the use of an Android application.
+This application represents an application with a medium level of interaction and had no sense of competition, which could be one of the reasons for its decline in popularity (figure~\ref{QR-threkeld}).
+\par
+
+It is worth noting that the application ceased running on the first week of October 2013 due to building works rendering it impossible to project onto the church; however this doesn't account for the earlier decline.
+
+As can be seen in figure~\ref{QR-OS-access} it was a mistake to not make the control application available on iOS as the two operating systems have an almost equal share in users.
 \begin{figure}[ht!]
 	\centering
 	\includegraphics[width=150mm]{./images/threkeld-scans}
@@ -530,8 +537,6 @@ It is worth noting that the application ceased running on the first week of Octo
 	\label{QR-threkeld}
 \end{figure}
 
-\par
-Lastly figure~\ref{QR-OS-access} shows which operating systems were used to make the scans.
 \begin{figure}[ht!]
 	\centering
 	\includegraphics[width=50mm]{./images/OSAccess}
@@ -539,12 +544,75 @@ Lastly figure~\ref{QR-OS-access} shows which operating systems were used to make
 	\label{QR-OS-access}
 \end{figure}
 
+\par
+\textbf{Trigger Applications}\\
+Macquaries Chest, Major Morisset, and Boom \& Bust were all applications that featured an animation being triggered relative to the amount of motion in the area. 
+This motion was picked up through the use of motion detecting cameras. 
+The applications generally featured a calm movie while there was no motion in the area, a subtle movie would be played if someone walked by the camera, and if people stayed in the area then a more significant movie was played.
 
+These applications showcased a subtle rewarding system similar to that found in games, where users are rewarded with movie clips that tell a story. 
+Unfortunately it seems that these applications were not as popular as they were expected, with the exception of Major Morisset. 
+It can be inferred that the reason for the difference in success between Major Morriset and the other applications of its type could be due to the actual content that is shown.
+More research needs to be conducted to back this up but if it is found to be true then an update in content would be enough to revitalise these applications.
 
+\par
+\textbf{Lanescape}\\
+Lanespace is an application that makes use of two projectors, two cameras, and an audio system.
+Music is played and a dance floor is projected onto the ground, encouraging users to dance.
+When users interact with this application their silhouettes are projected onto the wall for them to watch.
+The more people to join in the dancing, the more intense the visual projection becomes. 
+This application is the only application that makes use of sound, which together with the highly visual component makes a very appealing application. 
+Unfortunately there has been a decline in the use of this application which can again be put down to the lack of changing content. 
 
+\par\textbf{Shanghai}\\
+Shanghai is an application that makes use of motion detection cameras to allow users to move a boat left and right.
+This allowed for a rendition of the classic Pong game where users had to use the boat to bounce a ball around the projection in order to gain points.
+When enough points where collected the application would show a video relevant to the history of Newcastle, where a sailor was conscripted onto the boat.
 
-\newpage
+Due to the camera not being programmed to recognise each interacting individual, users were forced to work together as a single player to achieve their common goal.
+
+The Shanghai application showcases a few of the techniques mentioned in section~\ref{sec:techniques-to-enhance}, such as:
+\begin{itemize}
+	\item{Points;}
+	\item{Rewards;}
+	\item{Achievements; and}
+	\item{Ease of use}
+\end{itemize}
+However the application was never put into production due to it not performing correctly in the environment, namely it was not cross-platform and thus could not be run on the computer that it was designated. Hence the low indication of user interaction shown in table~\ref{table:application-popularity}.
+This highlights the importance of creating applications that are capable of running across different platforms.
+
+\par\textbf{Coal Collector}\\
+Coal collector is a game played by two teams of users on their smartphones, each team consists of one to four players. 
+Players control a ship and move coal around while avoiding obstacles.
+Table~\ref{table:application-popularity} shows that the application was relatively successful and it can be assumed that this was due to the competitive nature of the application.
+Future additions to this application would be the addition of a persistent leader board to keep track of each individuals contributions. 
+The games content itself will need constant refreshing due to the repetitive nature of the game.
+
+\par
+\textbf{No Interaction}\\
+Evolutions, Dreaming, and Car Culture are identified in table~\ref{table:game-rewards} as having no interaction, this is because they were simply projections of videos and slide shows. 
+These segments were set up to showcase Newcastle history but the users had no way of giving their input. 
+It can be seen that users did not feel the need to scan the related QR codes and it is assumed to be due to the lack of interactivity present.
+
+\subsubsection{Summary}
+At present each site in the City Evolutions Project is considered a separate site, meaning there is no relationship between each site aside from the type of content they are displaying.
+None of the applications utilise a users competitive nature, none of the applications have a concept of a persistent score or a player, treating each person who engages with the system as a new person.
+Interactivity between a user and the project is generally limited to simple trigger actions, if at all.
+
 \subsection{Proposal}
+The suggestions mentioned in section~\ref{sec:analysis} may not be enough to revitalise the project, therefor this section will outline a larger scale change to aid in enhancing the user interaction with the City Evolutions Project.
+
+I propose that we discard the idea of separate sites, each site should complement the next. 
+This would need completely new applications at all sites, since new applications need to be developed, I propose that applications shouldn't always be available at the same time as they are at the moment.
+Applications should change times and even sites, this is to stop people getting tired of the same content.
+
+\subsubsection{Smartphone Application}
+To get proposal this to come together nicely I have designed a cross-device mobile application that can interact with all the sites on Watt Street.
+Figures~\ref{iphone-interface-startscreen},~\ref{iphone-interface-menu},~\ref{iphone-interface-leaderboard}, and~\ref{iphone-interface-map} show some example functionality of this application.
+Figure~\ref{iphone-interface-startscreen} displays the first interface that the user is presented with. `Whats on in Newcastle' leads the user to figure~\ref{iphone-interface-menu}, here the user can see what attractions are currently running. 
+The user can select an attraction and the application will guide them to the correct site, through use of the phones global positioning system (GPS).
+Once the user in the sites vicinity the application will enable them to join the session that is currently, this will be done by either presenting them with an on screen controller or by indicating the alternate interaction device (camera, microphone, etc). 
+This means that any interaction between a smartphone and an application at a site can be done through this application, alleviating the need to create new applications constantly while also alleviating the need for the user to swap applications.
 
 \begin{figure}
 \centering
@@ -562,6 +630,11 @@ Lastly figure~\ref{QR-OS-access} shows which operating systems were used to make
 \end{minipage}
 \end{figure}
 
+\subsubsection{Global scoring}
+Further I propose that every application keep track of users, introducing customisable avatars and score boards. Keeping with the theme of connecting all the applications in some form, I propose a global leader board be introduced. 
+In this new system users can gain points at each site, these points are local to each site and also contribute to the players global score.
+Once a defined amount of points are achieved at a site the rate at which points are earned will slow down, encouraging users to move to the next site or come back another day to try a new application.
+Seen in figure~\ref{iphone-interface-leaderboard} is the aforementioned leader board with figure~\ref{iphone-interface-map} showing a site (red) where a player has exhausted their ability to gain points quickly, along with a nearby site (green) that has not yet been attempted.
 
 \begin{figure}
 \centering
@@ -579,13 +652,26 @@ Lastly figure~\ref{QR-OS-access} shows which operating systems were used to make
 \end{minipage}
 \end{figure}
 
+
+\subsubsection{Social Networking}
+This new application will have social networking aspects, integrating with popular social networking sites such as Twitter and Facebook.
+This integration can provide the advertisement needed to keep the project alive.
+As seen in figure~\ref{QR-overall-access-overTime}, without advertisement the project will has slowly become less popular.
+
+\par
+Along with the advertising potential from social media, the previously mentioned leader board (figure~\ref{iphone-interface-leaderboard}) can now have the ability to be filtered.
+This allows users to compare their scores directly with the people that matter to them, as well as the best of the best that Watt Street has to offer.
+
+\subsubsection{Potential Application}
+Following is a description of a new application that can be set up in this new connected environment.
+
+
 \begin{figure}[ht!]
 	\centering
 	\includegraphics[width=125mm]{./images/MultiPlayerChurchGame}
 	\caption{Multiplayer pong-style game to be played at the church.}
 	\label{application-multiPlyerPong}
 \end{figure}
-
 \newpage
 \section{Discussion}
 %
