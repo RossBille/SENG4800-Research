@@ -89,13 +89,16 @@ Email: \texttt{c3127333@uon.edu.au} }
 
 \section{Introduction}
 %User engagement and why we need it
-Systems are created daily to achieve a set of goals, these goals vary greatly depending on the environment that the system has to run in, be it in the workplace, schools, community, or general commercial systems. Regardless of the environment, the types of systems that will be discussed in this paper all share one thing, that is to achieve their goals they all require users to interact with the system in one way or another. 
+Systems are created daily to achieve a set of goals, these goals vary greatly depending on the environment that the system has to run in, be it in the workplace, schools, community, or general commercial systems.
+Regardless of the environment, the types of systems that will be discussed in this paper all share one thing, that is to achieve their goals they all require users to interact with the system in one way or another. 
 This interaction needs to be present throughout the entire life cycle of the system; however this paper will mainly discuss two phases of this life cycle, the initial implementation and continued execution of the system. 
-This paper will discuss what should be present during the initial implementation of a system, in order to get users interested in interacting with the system, and what techniques we can use to keep users motivated through the continued execution of a system. In 2006~\citet[p.~1]{fun-of-use} mentions ``Successful software products should arouse positive emotions'', thus further outlining another aim of software systems in particular that when met can assist in motivation~\citep{fun-of-use}.
+This paper will discuss what should be present during the initial implementation of a system, in order to get users interested in interacting with the system, and what techniques we can use to keep users motivated through the continued execution of a system. 
+In 2006~\citet[p.~1]{fun-of-use} mentions ``Successful software products should arouse positive emotions'', thus further outlining another aim of software systems in particular that when met can assist in motivation~\citep{fun-of-use}.
 
 \subsection{The City Evolutions Project}\label{sec:city-evolutions-project}
 %introduction to city evolutions project
-Newcastle City Council (NCC) were interested in increasing tourism through Newcastle and in particular through Watt Street. To do this NCC in collaboration with Newcastle Now and the University of Newcastle (UON) developed the City Evolutions Project. The main idea of this project was to promote Newcastle's rich cultural and historical aspects. 
+Newcastle City Council (NCC) were interested in increasing tourism through Newcastle and in particular through Watt Street. To do this NCC in collaboration with Newcastle Now and the University of Newcastle (UON) developed the City Evolutions Project. 
+The main idea of this project was to promote Newcastle's rich cultural and historical aspects. 
 The project required ten sites to be set up through Watt Street each containing a projector with some sites also housing a computer, a wireless hotspot, and a motion detecting camera. The aim being that material expressing the cultural and historical aspects of Newcastle was projected onto the sides of buildings between sunset and 10pm every day.\\
 In order for this project to be a success the displayed content needs to interest and attract people to Watt street and also motivate them to keep coming back, thus ultimately increasing tourism. Which brings us into the reason for the research that this paper presents.
 
@@ -182,19 +185,55 @@ Avatars are in-game representations of a user.
 Research by~\citet{self-modeling} has shown that avatars that resemble the user can be highly effective at motivating that user to behave in a desired way, thus another key technique in enhancing user engagement~\citep{bread-and-games}.
 
 \subsection{Virtual Reality}\label{sec:virtual-reality}
-
+\citet{vr-unity3d} defines virtual reality (VR) as ``a technology which allows a user to interact with a computer-simulated environment''. 
+This simulated environment can be used as an educational tool in the same way that field trips are used in learning, it allows the user to directly experience the material that they are learning~\citep{virtual-reality}.
+This concept can also be used as a tool to enhance user engagement because it provides a natural interface~\citep{virtual-reality}, for example users do not need to think about which button needs to be pressed to to perform an action. 
+This in turn leads to a reduction in the effort required by users to interact with the system and an increase in satisfaction with the system~\citep{virtual-reality,vr-unity3d}.
 
 \subsection{Effort Reduction}\label{sec:effort-reduction}
+Effort reduction is concerned with making making interaction with a system as simple as possible. 
+Effort reduction can be achieved through a variety of techniques, both software and hardware related.
 
-\subsection{Usability}
+\par 
+One of the easiest methods to implement a system that is easy to use is the utilisation of familiar input devices, this cuts out the need for a user to re-train in order to interact with the system. 
+An example of a familiar input device would be a smartphone, as~\citet{smartphone-use-in-au} has shown that 37\% of Australians have these at their disposal. 
+Another example would be the use of input devices that track user movement with  technologies such as gps, motion detection, and voice recognition. 
+The use of these input devices takes the strain off the user because they solely need to focus on tasks they carry out in their day-to-day lives.
+
+\subsubsection{Usability}
+Usability refers to the software interface itself and how intuitive the interface is designed.
+Research into educational software in particular shows that proper interface design can aid in achieving the aims of the software. This is because the user is less concerned on the use of the system and more concerned with the content it provides~\citep{472682,5716746,enhancing-learnability}.
 
 \subsection{Social Media}\label{sec:social-media}
+Use of social networking  websites can aid in motivating users to interact with a system and has been used in conjunction with other techniques, namely gamification.
+Achievements and leader boards can be published to websites such as facebook and twitter. 
+This can be used as a form of advertisement, which can assist in raising awareness of the system to non-current users. Users can `share' their achievements wit their friends, who can then in turn `like' and `comment' on these achievements~\citep{6567325}. 
+Users can also invite their friends to start using the application.
+Making these achievements and leader boards public can also assist in motivating current users to continue using the system, due to the competitive nature brought up in section~\ref{sec:gamification}.
 
 \subsection{Education}
-%closing the loop ~\citep{applications-as-stories}
+A system needs to have an aim for it to be motivational~\citep{bread-and-games,deci_extrinsic_2001,addition-to-creation}, one of the common aims found throughout systems is the aim to educate. When a system can educate a user, that user is intrinsically rewarded and satisfied with the system~\citep{bread-and-games}.
+Educating a user is not always easy and this section aims to clarify a technique to assist in achieving this aim.
+
+\subsubsection{Closing the Loop}
+Closing the loop refers to teaching a skill through attempting actions and receiving feedback before attempting the action again before the skill is mastered~\citep{applications-as-stories,virtual-reality,Skill-atoms}. 
+\citet{Skill-atoms} defines skill atoms that assist in achieving this loop of interaction. 
+These skill atoms are smaller subsets of the central skill that is being taught ultimately feeding into it.
+
+\begin{figure}[ht!]
+	\centering
+	\includegraphics[width=100mm]{./images/skill-atom}
+	\caption{A Skill Atom~\citep{Skill-atoms}}
+	\label{skill-atom}
+\end{figure}
+
+\par
+Using this closed-loop model of interaction it can ensure that a user is not overwhelmed by an application that is trying to teach a skill.
+Instead users are taught small skills that are combined into sets of skills that feed into the main or centralised skill that the system is teaching~\citep{applications-as-stories,Skill-atoms}.
+
 \subsection{Summary}
 In order for a system to be motivating; it should offer some kind of intrinsic reward to the user, which is easier to implement if the system already has a meaningful purpose that would interest the user within itself. 
-For example, systems that aims to educate, assists a worker in their job or assists a user to do their day-to-day tasks.
+For example, systems that aim to educate, assists a worker in their job or assists a user to do their day-to-day tasks.
 
 \par
 A system should be interesting, in order to do this new content should be added regularly. 
@@ -226,12 +265,13 @@ Some systems include (but not limited to):
 
 \subsubsection{Taskville}\label{sec:taskville}
 Taskville is one such system designed to be implemented in the workplace~\citep{taskville}. Taskville was designed to ``address key challenges in contemporary distributed and diverse workplaces''~\citep[p.~4]{taskville}. 
-It does this by implementing a game that is to be played by the different groups of an organisation, where each group  has a city in the game that they must grow and control. Taskville implements gamification (see section~\ref{sec:gamification}) techniques such as rewards in the form of in-game currency and points, both of which can be earned by meeting KPI's or completing defined tasks.\\ 
+It does this by implementing a game that is to be played by the different groups of an organisation, where each group  has a city in the game that they must grow and control. 
+Taskville implements gamification (see section~\ref{sec:gamification}) techniques such as rewards in the form of in-game currency and points, both of which can be earned by meeting KPI's or completing defined tasks.\\ 
 Taskville was found to increase the awareness of the work performed by other groups within the workplace and at the same time encouraged each individual to outperform other group members in order to reach the title of mayor~\citep{taskville}.
 
 \subsubsection{Agentville}\label{sec:agentville}
 Agentville is a tool developed to assist employees of a call center in managing their KPI's~\citep{production-environments}. 
-As call centers already monitor statistics such as: Average Handle Time (AHT)~\citep{production-environments},	Occupancy, Abandoned calls,	Calls answered,	Calls offered, Average wait time, and Grade of service~\citep{call-center}. 
+As call centers already monitor statistics such as: Average Handle Time (AHT)~\citep{production-environments},	occupancy, abandoned calls,	calls answered,	calls offered, average wait time, and grade of service~\citep{call-center}. 
 The application was not developed to create more statistics to monitor but to help each individual keep track of their own statistics in relation to the rest of the organisation~\citep{production-environments}.
 
 \subsection{Education}\label{sec:education}
@@ -242,7 +282,9 @@ Advancements in technology have led to it being adopted within the educational s
 The following sections discuss what systems have been implemented throughout some aspects of education, from simple paper-based systems to advances VR systems.
 
 \subsubsection{Classroom}\label{sec:classroom}
-Walk into almost any primary school classroom and you will see a poster with a list of students names with stickers next to these names. This is a system that teachers use to reward students and publicly display achievements to the class. This is done to encourage competition between the students, which in turn motivates them to do better~\citep{school-kids}.
+Walk into almost any primary school classroom and you will see a poster with a list of students names with stickers next to these names. 
+This is a system that teachers use to reward students and publicly display achievements to the class. 
+This is done to encourage competition between the students, which in turn motivates them to do better~\citep{school-kids}.
 
 \subsubsection{Online Learning}
 With the advancements in technology over the past few years universities around the world have started offering courses by distance in an online manner; in addition to this, there are many websites dedicated to teaching content to anyone that wants to learn it.
@@ -253,7 +295,9 @@ Generally within higher education there is less emphasis on the initial interest
 Generally the students that enroll in courses online are of mature age and sometimes they have other focuses in life~\citep{distance-education}.
 
 \par
-Universities around the world have been taking steps to increase this motivation, largely through the use of multimedia; lectures can now be pre-recorded and streamed to students all around the world. Universities around the world have adopted this technique, however retaining student interest and motivation via distance learning remains an ongoing challenge. This paper will further describe some techniques that would be of great benefit to this type of education (see section~\ref{sec:techniques-to-enhance}).
+Universities around the world have been taking steps to increase this motivation, largely through the use of multimedia; lectures can now be pre-recorded and streamed to students all around the world. 
+Universities around the world have adopted this technique, however retaining student interest and motivation via distance learning remains an ongoing challenge. 
+This paper will further describe some techniques that would be of great benefit to this type of education (see section~\ref{sec:techniques-to-enhance}).
 
 \par
 \textbf{Educational Websites}\\ 
@@ -287,7 +331,8 @@ Codecademy also implements a few gamification techniques (see section~\ref{sec:g
 \end{figure}
 
 \subsection{Therapy}
-Researchers have recently been looking into alternate methods for delivering cognitive behavioral therapy to patients, with recent studies showing that computerised methods compare very well with the traditional face to face methods~\citep{games-for-behavior-change}. One of the reasons identified in~\citep{games-for-behavior-change} is the ``difficulty or tediousness of using the tools''[p.~2], which is one of the issues this paper aims to address (specifically see section~\ref{sec:effort-reduction}).
+Researchers have recently been looking into alternate methods for delivering cognitive behavioral therapy to patients, with recent studies showing that computerised methods compare very well with the traditional face to face methods~\citep{games-for-behavior-change}. 
+One of the reasons identified in~\citep{games-for-behavior-change} is the ``difficulty or tediousness of using the tools''[p.~2], which is one of the issues this paper aims to address (specifically see section~\ref{sec:effort-reduction}).
 
 \subsubsection{MoodGYM}
 
@@ -474,7 +519,8 @@ It is beneficial to analyse each application in order to get a better of represe
 \end{table}
 
 \par
-Table~\ref{table:application-popularity} also shows that the Threlkeld application was the most popular and therefor a more thorough analysis of this application needs to be performed. Figure~\ref{QR-threkeld} shows the amount of scans that the Threlkeld application received over its time in operation. 
+Table~\ref{table:application-popularity} also shows that the Threlkeld application was the most popular and therefor a more thorough analysis of this application needs to be performed. 
+Figure~\ref{QR-threkeld} shows the amount of scans that the Threlkeld application received over its time in operation. 
 It is worth noting that the application ceased running on the first week of October 2013 due to building works rendering it impossible to project onto the church.
 
 \begin{figure}[ht!]
