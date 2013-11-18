@@ -73,7 +73,10 @@ Email: \texttt{c3127333@uon.edu.au} }
 
 \newpage
 \begin{abstract}%
-\noindent Document abstract 
+\noindent User engagement is necessary for any system that requires any form of input from a user. 
+This raises many questions such as `how can a system interest a user', `how can a system motivate a user', and `how can a system educate a user'. 
+Whats more difficult is creating a system that can answer all three of these questions, this is due to the relationship between education and motivation.
+This paper will discuss methods and techniques that can be used to aid in achieving these goals.
 \end{abstract}
 
 \pagebreak
@@ -334,9 +337,10 @@ Codecademy also implements a few gamification techniques (see section~\ref{sec:g
 Researchers have recently been looking into alternate methods for delivering cognitive behavioral therapy to patients, with recent studies showing that computerised methods compare very well with the traditional face to face methods~\citep{games-for-behavior-change}. 
 One of the reasons identified in~\citep{games-for-behavior-change} is the ``difficulty or tediousness of using the tools''[p.~2], which is one of the issues this paper aims to address (specifically see section~\ref{sec:effort-reduction}).
 
-\subsubsection{MoodGYM}
-
 \subsubsection{Beating the Blues}
+Beating the Blues is a multimedia cognitive behavioral therapy application~\citep{beating-the-blues}.
+The application was designed to provide self-help to therapy patients while allowing the allocating therapist to track the patients progress.
+The application was found to have a high acceptance rate due to the high levels of interaction present in the application~\citep{beating-the-blues,games-for-behavior-change}. 
 
 
 \subsection{Commercial}
@@ -379,9 +383,6 @@ Because using these cards is optional it can be seen that these systems must off
 \subsection{Community}
 Lately there have been many different applications being published, each with the aim to modify the behavior of the general population. 
 The following sections analyse some of these applications and discuss the methods used to increase a users interaction with the application.
-
-\subsubsection{Nike+}
-
 
 \subsubsection{I-GEAR}
 I-GEAR is a project currently being run by the University of Luxembourg in order to encourage commuters to modify their transport behaviors to ultimately reduce congestion~\citep{igear,igear-2}. 
@@ -443,9 +444,11 @@ Despite these successes however some concerns have been raised in relation to th
 The potential pitfalls of social media are explored further in section~\ref{sec:social-media}.
 
 \subsubsection{Vivid}
+Vivid is a light show that is occasionally played in Sydney, with its last appearance running from the 24th of May until the 10th of June 2013.
+Vivid uses large scale attractions, such as colouring the entire city, music concerts, and debates from well known public figures~\citep{vivid}. 
+There is not a lot of opportunities for the public to interact with the systems in place, for this reason Vivid solely relies on the scale of attractions to motivate and interest people.
 
-
-\newpage
+%\newpage
 \section{City Evolutions}
 Section~\ref{sec:city-evolutions-project} introduced the City Evolutions project and its aims, this section will critically analyse the implementation of the project.
 This section will additionally make some suggestions at new approaches for the project aimed at increasing the amount of interaction between the users and the system.
@@ -496,6 +499,9 @@ Without the advertisement it appears as if the content delivered by the project 
 	\label{table:application-popularity}
 \end{table}
 
+\par
+It is beneficial to analyse each application in order to get a better of representation of what types of applications motivated users the most. Table~\ref{table:application-popularity} shows the applications including a breakdown of the types of interaction utilised in each application (defined in table~\ref{table:interactivity-description}).
+
 \begin{table}[ht!]
 	\centering
 	\bgroup
@@ -517,30 +523,28 @@ Without the advertisement it appears as if the content delivered by the project 
 \end{table}
 
 \par
-It is beneficial to analyse each application in order to get a better of representation of what types of applications motivated users the most. Table~\ref{table:application-popularity} shows this breakdown including a breakdown of the types of interaction utilised in each application shown in table~\ref{table:interactivity-description}.
-
-\par
 \textbf{Threlkeld Speak}\\
 Table~\ref{table:application-popularity} shows that the Threlkeld Speak application was the most popular application on Watt Street.
 Threlkeld Speak consisted of a set of movies that represented words from the Awakabal language. The aim was to educate users on the history of this native language though visual displays of the words.
 Users were given control over which movie-word pair was displayed from the projector through the use of an Android application.
-This application represents an application with a medium level of interaction and had no sense of competition, which could be one of the reasons for its decline in popularity (figure~\ref{QR-threkeld}).
 \par
-
-It is worth noting that the application ceased running on the first week of October 2013 due to building works rendering it impossible to project onto the church; however this doesn't account for the earlier decline.
-
-As can be seen in figure~\ref{QR-OS-access} it was a mistake to not make the control application available on iOS as the two operating systems have an almost equal share in users.
 \begin{figure}[ht!]
 	\centering
 	\includegraphics[width=150mm]{./images/threkeld-scans}
 	\caption{QR Code - Threlkeld Speak scans}
 	\label{QR-threkeld}
 \end{figure}
+This application represents an application with a medium level of interaction and had no sense of competition, which could be one of the reasons for its decline in popularity (figure~\ref{QR-threkeld}).
+
+It is worth noting that the application ceased running on the first week of October 2013 due to building works rendering it impossible to project onto the church; however this doesn't account for the earlier decline.
+
+As can be seen in figure~\ref{QR-OS-access} it was a mistake to not make the control application available on iOS as the two operating systems have an almost equal share in users.
+
 
 \begin{figure}[ht!]
 	\centering
 	\includegraphics[width=50mm]{./images/OSAccess}
-	\caption{QR Code - OS spread}
+	\caption{QR Code - Operating system spread}
 	\label{QR-OS-access}
 \end{figure}
 
@@ -662,9 +666,14 @@ As seen in figure~\ref{QR-overall-access-overTime}, without advertisement the pr
 Along with the advertising potential from social media, the previously mentioned leader board (figure~\ref{iphone-interface-leaderboard}) can now have the ability to be filtered.
 This allows users to compare their scores directly with the people that matter to them, as well as the best of the best that Watt Street has to offer.
 
-\subsubsection{Potential Application}
-Following is a description of a new application that can be set up in this new connected environment.
+\subsubsection{Potential Applications}
+The following section outlines some applications that can be set up in the new proposed environment.
 
+\par\textbf{Multi player Pong}\\
+A new application that can be set up at one of the sites is a multi player Pong style game (figure~\ref{application-multiPlyerPong}). 
+The application has been shown with generic looking objects so it is not tied to one set of content, i.e. the blue paddles can be changed to any type of content deemed fit for the story trying to be conveyed.
+This application implements many of the points discussed in section~\ref{sec:techniques-to-enhance}. 
+The application is competitive, allowing more than one player and up to eight players to compete with each other.
 
 \begin{figure}[ht!]
 	\centering
@@ -672,21 +681,45 @@ Following is a description of a new application that can be set up in this new c
 	\caption{Multiplayer pong-style game to be played at the church.}
 	\label{application-multiPlyerPong}
 \end{figure}
-\newpage
-\section{Discussion}
+
+To the far right we can see the sites leader board, the players shown here (shown by chosen name and avatar) are relative to the current game being played. 
+Objects can come out of architectural aspects of the building that the application is projected against, such as the church door or windows.
+These objects can be collected for points, or to modify the applications state by changing the size of the paddles or the ball.
+Each time a player misses the ball and it goes out of bounds, that players paddle is made smaller until its non-existent and the player removed from the game. This function is to ensure new players can start playing if there is a queue, if there is no queue then the removed player may join back in.
+
+\par\textbf{Multi player Pacman}\\
+With the use of smartphones there is no need to limit the project to projections that can only be shown at night time.
+The phone itself can act as the output device for an application that is set up on Watt Street. 
+This leaves it open for games such as the one conceptualised in figure~\ref{application-pacman}.
+This proposed application utilizes the phones GPS sensors to get the users to play a large scale hide and seek type of game.
+Users can choose to be displayed on the map as either a Pacman character or they can use their own customised avatar.
+Users must find other users who are participating in the game and can even find other items that can be placed at popular locations, thus also incorporating a scavenger hunt aspect.
+\begin{figure}[ht!]
+	\centering
+	\includegraphics[width=125mm]{./images/pacman}
+	\caption{Pacman style game to be played throughout Watt Street}
+	\label{application-pacman}
+\end{figure}
+
+
+%\newpage
+%\section{Discussion}
 %
-Give an extended and detailed discussion of your study. explain what we can learn from your study.
+%Give an extended and detailed discussion of your study. explain what we can learn from your study.
 %
 
 \section{Conclusion}
-%
-A brief final summary of the main achievements and outcomes. Possibly some suggestions for future work that can follow on from your project.%
+To summarise, systems need user engagement and interaction, there is no point creating a system that no one is going to use.
+Achieving sufficient levels of user engagement requires a thorough definition of the systems aims followed by methods to achieve those aims. 
+An example from this paper is the City Evolutions Project, its aims were to educate tourists and citizens about the history and culture of Newcastle.
+After this definition was made and a project was designed, the approach I propose is to add game mechanics to the project in order to motivate a user to interact with the system.
 
+For a user to be motivated to engage with a system, there must be interaction. The slide shows and videos played on Watt Street attracted the least amount of engagement when compared to applications that a user could pick up and use.
 
-\section{Glossary}
-%
+A successfully engaging application will leave a user intrinsically rewarded and allow both the product owner and its users to obtain the most value out of the the system.
+
 \subsection*{Acknowledgements}
-The author is grateful to ....
+I am grateful to Dr. Yuqing lin and A/Prof Stephan Chalup for their guidance through this project.
 %
 \vskip 0.2in
 \newpage
